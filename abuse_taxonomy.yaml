@@ -1,0 +1,50 @@
+base: https://github.com/graphsense/graphsense-tagpacks/vocab/abuse/
+concept_scheme:
+  title: Abuse Types
+  creator: Interpol Darknet and Cryptocurrencies Working Group
+iri_normalization: camelize
+---
+- Cyber:
+  - DDoS
+  - Hacking
+  - Identity Theft
+  - Malware
+  - Ransomware
+  - Phishing 
+- Drugs
+- Extremism:
+  - Terrorism
+  - Radicalization
+  - Racial supremacy
+  - Hate crime
+  - Offense
+- Financial:
+  - Counterfeid money
+  - Money Laundering
+  - Ponzi Scheme
+  - Extortion
+- Good and Services:
+  - Counterfeit material
+  - Crime-as-a-service
+  - Human Trafficking
+  - Identity Theft
+  - Intellectual Property
+  - Smuggling
+  - Weapons
+- None
+- Sexual:
+  - Child exploitation
+  - Human Trafficking
+  - Rape
+  - Prostitution 
+  - Revenge Porn
+  - Sextortion
+  - Computer Generated Imagery
+- Social Engineering:
+  - Phishing
+  - CEO Fraud
+- Scamming
+- Violence:
+  - Rape 
+  - Torture
+  - Assassin

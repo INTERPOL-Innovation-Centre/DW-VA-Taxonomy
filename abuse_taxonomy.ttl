@@ -1,0 +1,257 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix : <https://github.com/graphsense/graphsense-tagpacks/vocab/abuse/> .
+
+:
+    a skos:ConceptScheme ;
+    dct:title "Abuse Types" ;
+    dct:creator "Interpol Darknet and Cryptocurrencies Working Group" ;
+    skos:hasTopConcept :Cyber, :Drugs, :Extremism, :Financial, :GoodAndServices, :None, :Scamming, :Sexual, :SocialEngineering, :Violence .
+
+:Assassin
+    a skos:Concept ;
+    skos:broader :Violence ;
+    skos:inScheme : ;
+    skos:prefLabel "Assassin" .
+
+:CEOFraud
+    a skos:Concept ;
+    skos:broader :SocialEngineering ;
+    skos:inScheme : ;
+    skos:prefLabel "CEO Fraud" .
+
+:ChildExploitation
+    a skos:Concept ;
+    skos:broader :Sexual ;
+    skos:inScheme : ;
+    skos:prefLabel "Child exploitation" .
+
+:ComputerGeneratedImagery
+    a skos:Concept ;
+    skos:broader :Sexual ;
+    skos:inScheme : ;
+    skos:prefLabel "Computer Generated Imagery" .
+
+:CounterfeidMoney
+    a skos:Concept ;
+    skos:broader :Financial ;
+    skos:inScheme : ;
+    skos:prefLabel "Counterfeid money" .
+
+:CounterfeitMaterial
+    a skos:Concept ;
+    skos:broader :GoodAndServices ;
+    skos:inScheme : ;
+    skos:prefLabel "Counterfeit material" .
+
+:CrimeAsAService
+    a skos:Concept ;
+    skos:broader :GoodAndServices ;
+    skos:inScheme : ;
+    skos:prefLabel "Crime-as-a-service" .
+
+:Cyber
+    a skos:Concept ;
+    skos:inScheme : ;
+    skos:narrower :DDoS, :Hacking, :IdentityTheft, :Malware, :Phishing, :Ransomware ;
+    skos:prefLabel "Cyber" ;
+    skos:topConceptOf : .
+
+:DDoS
+    a skos:Concept ;
+    skos:broader :Cyber ;
+    skos:inScheme : ;
+    skos:prefLabel "DDoS" .
+
+:Drugs
+    a skos:Concept ;
+    skos:inScheme : ;
+    skos:prefLabel "Drugs" ;
+    skos:topConceptOf : .
+
+:Extortion
+    a skos:Concept ;
+    skos:broader :Financial ;
+    skos:inScheme : ;
+    skos:prefLabel "Extortion" .
+
+:Extremism
+    a skos:Concept ;
+    skos:inScheme : ;
+    skos:narrower :HateCrime, :Offense, :RacialSupremacy, :Radicalization, :Terrorism ;
+    skos:prefLabel "Extremism" ;
+    skos:topConceptOf : .
+
+:Financial
+    a skos:Concept ;
+    skos:inScheme : ;
+    skos:narrower :CounterfeidMoney, :Extortion, :MoneyLaundering, :PonziScheme ;
+    skos:prefLabel "Financial" ;
+    skos:topConceptOf : .
+
+:GoodAndServices
+    a skos:Concept ;
+    skos:inScheme : ;
+    skos:narrower :CounterfeitMaterial, :CrimeAsAService, :HumanTrafficking, :IdentityTheft, :IntellectualProperty, :Smuggling, :Weapons ;
+    skos:prefLabel "Good and Services" ;
+    skos:topConceptOf : .
+
+:Hacking
+    a skos:Concept ;
+    skos:broader :Cyber ;
+    skos:inScheme : ;
+    skos:prefLabel "Hacking" .
+
+:HateCrime
+    a skos:Concept ;
+    skos:broader :Extremism ;
+    skos:inScheme : ;
+    skos:prefLabel "Hate crime" .
+
+:HumanTrafficking
+    a skos:Concept ;
+    skos:broader :GoodAndServices, :Sexual ;
+    skos:inScheme : ;
+    skos:prefLabel "Human Trafficking" .
+
+:IdentityTheft
+    a skos:Concept ;
+    skos:broader :Cyber, :GoodAndServices ;
+    skos:inScheme : ;
+    skos:prefLabel "Identity Theft" .
+
+:IntellectualProperty
+    a skos:Concept ;
+    skos:broader :GoodAndServices ;
+    skos:inScheme : ;
+    skos:prefLabel "Intellectual Property" .
+
+:Malware
+    a skos:Concept ;
+    skos:broader :Cyber ;
+    skos:inScheme : ;
+    skos:prefLabel "Malware" .
+
+:MoneyLaundering
+    a skos:Concept ;
+    skos:broader :Financial ;
+    skos:inScheme : ;
+    skos:prefLabel "Money Laundering" .
+
+:None
+    a skos:Concept ;
+    skos:inScheme : ;
+    skos:prefLabel "None" ;
+    skos:topConceptOf : .
+
+:Offense
+    a skos:Concept ;
+    skos:broader :Extremism ;
+    skos:inScheme : ;
+    skos:prefLabel "Offense" .
+
+:Phishing
+    a skos:Concept ;
+    skos:broader :Cyber, :SocialEngineering ;
+    skos:inScheme : ;
+    skos:prefLabel "Phishing" .
+
+:PonziScheme
+    a skos:Concept ;
+    skos:broader :Financial ;
+    skos:inScheme : ;
+    skos:prefLabel "Ponzi Scheme" .
+
+:Prostitution
+    a skos:Concept ;
+    skos:broader :Sexual ;
+    skos:inScheme : ;
+    skos:prefLabel "Prostitution" .
+
+:RacialSupremacy
+    a skos:Concept ;
+    skos:broader :Extremism ;
+    skos:inScheme : ;
+    skos:prefLabel "Racial supremacy" .
+
+:Radicalization
+    a skos:Concept ;
+    skos:broader :Extremism ;
+    skos:inScheme : ;
+    skos:prefLabel "Radicalization" .
+
+:Ransomware
+    a skos:Concept ;
+    skos:broader :Cyber ;
+    skos:inScheme : ;
+    skos:prefLabel "Ransomware" .
+
+:Rape
+    a skos:Concept ;
+    skos:broader :Sexual, :Violence ;
+    skos:inScheme : ;
+    skos:prefLabel "Rape" .
+
+:RevengePorn
+    a skos:Concept ;
+    skos:broader :Sexual ;
+    skos:inScheme : ;
+    skos:prefLabel "Revenge Porn" .
+
+:Scamming
+    a skos:Concept ;
+    skos:inScheme : ;
+    skos:prefLabel "Scamming" ;
+    skos:topConceptOf : .
+
+:Sextortion
+    a skos:Concept ;
+    skos:broader :Sexual ;
+    skos:inScheme : ;
+    skos:prefLabel "Sextortion" .
+
+:Sexual
+    a skos:Concept ;
+    skos:inScheme : ;
+    skos:narrower :ChildExploitation, :ComputerGeneratedImagery, :HumanTrafficking, :Prostitution, :Rape, :RevengePorn, :Sextortion ;
+    skos:prefLabel "Sexual" ;
+    skos:topConceptOf : .
+
+:Smuggling
+    a skos:Concept ;
+    skos:broader :GoodAndServices ;
+    skos:inScheme : ;
+    skos:prefLabel "Smuggling" .
+
+:SocialEngineering
+    a skos:Concept ;
+    skos:inScheme : ;
+    skos:narrower :CEOFraud, :Phishing ;
+    skos:prefLabel "Social Engineering" ;
+    skos:topConceptOf : .
+
+:Terrorism
+    a skos:Concept ;
+    skos:broader :Extremism ;
+    skos:inScheme : ;
+    skos:prefLabel "Terrorism" .
+
+:Torture
+    a skos:Concept ;
+    skos:broader :Violence ;
+    skos:inScheme : ;
+    skos:prefLabel "Torture" .
+
+:Violence
+    a skos:Concept ;
+    skos:inScheme : ;
+    skos:narrower :Assassin, :Rape, :Torture ;
+    skos:prefLabel "Violence" ;
+    skos:topConceptOf : .
+
+:Weapons
+    a skos:Concept ;
+    skos:broader :GoodAndServices ;
+    skos:inScheme : ;
+    skos:prefLabel "Weapons" .
