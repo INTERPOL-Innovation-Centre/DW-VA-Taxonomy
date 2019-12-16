@@ -1,0 +1,259 @@
+base: https://github.com/graphsense/graphse   - tagpacks/vocab/abuse/
+concept_scheme: Proposed Classification of Crime for Statistical Purposes.
+  title: Abuse Types
+  creator: INTERPOL Darknet and Cryptocurrencies Working Group
+  citation: National Academies of Sciences, Engineering, and Medicine. Modernizing Crime Statistics. Defining and Classifying Crime.
+  id: https://www.nap.edu/read/23492/chapter/7#126
+iri_normalization: camelize
+---
+- Acts leading to death or intending to cause death:
+ - Murder and intentional homicide
+ - Nonintentional homicide
+  - Nonnegligent manslaughter
+  - Negligent manslaughter
+   - Vehicular manslaughter
+   - Nonvehicular manslaughter
+ - Assisting or instigating suicide
+  - Unlawful2 assisted suicide
+  - Other acts leading to death by suicide
+ - Unlawful euthanasia
+ - Unlawful feticide
+ - Unlawful killing associated with armed conflict
+ - Other unlawful acts leading to death
+- Acts causing harm or intending to cause harm to the person:
+ - Assault
+  - Serious assault involving shooting or discharge of a firearm
+  - Serious assault by means other than discharge of a firearm
+  - Minor assault
+ - Threat
+  - Serious threat through shooting or discharge of a firearm
+  - Serious threat through the display or pointing of a firearm
+  - Serious threat by means other than firearm
+  - Minor threat
+  - Other acts causing or threatening injury or harm
+ - Acts against liberty
+  - Abduction of a minor
+   - Parental abduction
+   - Abduction by a family member
+   - Abduction by a legal guardian
+   - Abduction by another person
+  - Kidnapping for ransom
+  - Illegal restraint
+  - Hijacking
+  - Illegal adoption
+  - Forced marriage
+  - Other deprivation of liberty or acts against liberty
+ - Slavery and exploitation
+  - Slavery and involuntary servitude
+  - Forced labor
+   - Forced labor for domestic services
+   - Forced labor for industry services
+   - Other forced labor
+  - Other acts of slavery and exploitation
+ - Trafficking in persons
+  - Trafficking in persons for sexual exploitation
+  - Trafficking in persons for forced labor or services
+  - Trafficking in persons for organ removal
+  - Trafficking in persons for other purposes
+ - Coercion
+  - Extortion or blackmail
+  - Other acts of coercion
+ - Negligent acts
+  - Negligence in situations of persons under care
+   - Negligence in situations of children under care
+   - Negligence in situations of other dependent persons under care
+   - Other negligence in situations of persons under care
+  - Professional negligence
+  - Negligence related to driving a vehicle
+  - Other acts of negligence
+ - Dangerous acts
+  - Acts that endanger health of another person
+  - Operation of a vehicle under the influence of alcohol or other psychoactive substances
+  - Other dangerous acts leading to injury
+ - Acts intended to induce fear or emotional distress
+  - Harassment
+  - Stalking
+  - Other acts intended to induce fear or emotional distress
+ - Defamation
+ - Discrimination
+ - Acts that trespass against the person
+  - Invasion of privacy
+  - Other acts that trespass against the person
+ - Other acts causing harm or intending to cause harm to the person
+- Injurious acts of a sexual nature:
+ - Rape
+  - Rape with force
+  - Rape without force
+  - Rape involving inability to express consent or nonconsent
+  - Threat of rape
+ - Sexual assault
+  - Physical sexual assault
+  - Threat of a sexual nature
+ - Sexual violations of a nonphysical nature
+ - Sexual exploitation of adults
+ - Sexual exploitation of children
+  - Child pornography
+  - Child prostitution, production and provision
+  - Child prostitution, procurement
+  - Other sexual exploitation of children
+ - Other injurious acts of a sexual nature
+- Acts of violence or threatened violence against a person that involve property:
+ - Robbery
+  - Robbery from the person
+  - Carjacking/robbery of a car or vehicle
+  - Robbery of valuables or goods in transit
+  - Robbery of an establishment or institution
+  - Robbery of livestock
+  - Other acts of robbery
+ - Terroristic or disruptive threats to buildings or critical infrastructure
+ - Other acts against property involving violence against a person
+- Acts against property only:
+ - Burglary
+  - Burglary of business premises
+  - Burglary of residential/private premises
+  - Burglary of public premises
+  - Other acts of burglary
+ - Theft
+  - Theft of a motorized vehicle or parts thereof
+   - Theft of a motor vehicle
+   - Illegal use of a motor vehicle
+   - Theft of parts of a motor vehicle
+   - Other theft of a motorized vehicle or parts thereof
+  - Theft of personal property
+   - Theft of personal property from a person
+   - Theft of personal property from a vehicle
+   - Other theft of personal property
+  - Theft from business or other nonpublic organization
+  - Theft of public property
+  - Theft of livestock
+  - Theft of services
+  - Other theft
+ - Acts against computer systems
+  - Unlawful access to a computer system
+  - Unlawful interference with a computer system or computer data
+   - Unlawful interference with a computer system
+   - Unlawful interference with computer data
+  - Unlawful interception or access of computer data
+  - Other acts against computer systems
+ - Intellectual property offenses
+ - Property damage
+  - Arson
+   - Arson of personal/residential property
+   - Arson of business or other nonpublic establishment property
+   - Arson of public property
+  - Reckless burning
+  - Other damage of property
+ - Other acts against property only
+- Acts involving controlled substances:
+ - Unlawful possession or use of controlled drugs for personal consumption
+ - Unlawful cultivation or production of controlled drugs
+ - Unlawful trafficking or distribution of controlled drugs
+  - Street level selling of quantities of controlled drugs suitable for personal consumption
+  - Wholesale distribution/trading/possession of controlled drugs
+ - Unlawful acts involving drug equipment or paraphernalia
+ - Other unlawful acts involving controlled drugs, psychoactive substances or precursors
+- Acts involving fraud, deception, or corruption:
+ - Fraud
+  - Consumer financial and products/services fraud
+  - Identity theft
+  - Fraud against businesses or establishments, including nonprofit organizations
+  - Fraud against government agencies
+  - Other types of fraud
+ - Forgery/counterfeiting
+  - Counterfeiting means of payment
+   - Counterfeiting means of cash payment
+   - Counterfeiting means of noncash payment
+  - Counterfeit product offenses
+  - Acts of forgery/counterfeiting documents
+  - Other acts of forgery/counterfeiting
+ - Corruption
+  - Bribery
+  - Embezzlement
+  - Abuse of functions
+  - Trading in influence
+  - Other acts of corruption
+ - Acts involving proceeds of crime
+  - Money laundering
+  - Illicit trafficking in cultural property
+  - Fencing stolen goods
+  - Other acts involving proceeds of crime
+- Acts against public order and authority:
+ - Acts against public order behavioral standards
+  - Violent public disorder offenses
+  - Acts related to social public order norms and standards
+  - Other acts against public order behavioral standards
+ - Acts against public order sexual standards
+  - Prostitution offenses
+  - Pornography offenses
+  - Other acts against public order sexual standards
+ - Acts related to freedom of expression or control of expression
+  - Acts against freedom of expression
+  - Acts related to expressions of controlled social beliefs and norms
+ - Acts contrary to public revenue or regulatory provisions
+  - Tax evasion, and other acts against taxation provisions
+  - Market manipulation, insider trading, and other acts against market or financial regulations
+  - Acts against regulations on alcohol, tobacco, or gambling
+   - Acts against regulations on alcohol or tobacco
+   - Acts against regulations on gambling
+  - Customs violations
+  - Other violations of public revenue and regulatory provisions
+ - Acts related to migration
+  - Offenses related to smuggling of migrants
+  - Unlawful entry/border crossing
+  - Unlawful employment or housing of an undocumented migrant
+  - Other unlawful acts related to migration
+ - Acts against the justice system
+  - Obstruction of justice
+  - Breach of justice system authority
+  - Preparatory or enabling crimes
+  - Other acts against the justice system
+ - Acts related to democratic elections
+  - Acts intended to unduly influence voters at elections
+  - Other acts related to democratic elections
+ - Acts contrary to labor law
+  - Collective labor law violations
+  - Individual labor law violations
+ - Acts contrary to juvenile justice regulations or involving juveniles/minors
+  - Status offenses
+   - Status offenses committed by juveniles
+   - Status offenses committed upon juveniles
+  - Other acts contrary to juvenile justice regulations
+ - Other acts against public order and authority
+- Acts against public safety and national security:
+ - Acts involving weapons, explosives, and other destructive materials
+  - Unlawful possession or use of weapons and explosives
+   - Unlawful possession or use of firearms
+   - Unlawful possession or use of other weapons or explosives
+   - Unlawful possession or use of chemical, biological, or radioactive materials
+   - Other acts related to possession or use of weapons and explosives
+  - Trafficking of weapons and explosives
+   - Trafficking of firearms
+   - Trafficking of other weapons or explosives
+   - Trafficking of chemical, biological or radioactive materials
+   - Other acts related to trafficking of weapons and explosives
+  - Other acts relating to weapons and explosives
+ - Acts against national security
+ - Acts related to organized criminal groups
+  - Racketeering, and violations of the Racketeer Influenced and Corrupt Organizations (RICO) Act
+  - Other acts related to an organized criminal group
+ - Terrorism
+  - Participation in a terrorist group
+  - Financing of terrorism
+  - Other acts related to the activities of a terrorist group
+- Acts against the natural environment or against animals:
+ - Acts that cause environmental pollution or degradation
+ - Acts involving the movement or dumping of waste
+ - Trade or possession of protected or prohibited species of fauna and flora
+ - Acts that result in the depletion or degradation of natural resources
+  - Illegal logging or mining
+  - Illegal hunting, fishing, or gathering of wild fauna and flora
+ - Acts against animals
+ - Other acts against the natural environment or against animals
+- Other criminal acts not elsewhere classified:
+ - Violations of military law
+ - Violations of tribal law
+ - Torture
+ - Piracy
+ - Genocide
+ - War crimes
+ - Other criminal acts not elsewhere classified
