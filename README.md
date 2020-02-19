@@ -15,4 +15,4 @@ Make sure SKOUT is installed
 ## Contribute
 Should you wish to contribute to this project, please review our [Contributor's page][contributing]
 
-[contributing]: CONTRIBUTING
+[contributing]: CONTRIBUTING.md
