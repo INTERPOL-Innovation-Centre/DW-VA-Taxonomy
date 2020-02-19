@@ -101,7 +101,7 @@ Contributions you make to this public repository are completely voluntary.
 When you submit an issue, bug report, question, enhancement, pull request, etc., you are offering your contribution without expectation of payment, you expressly waive any future pay claims against INTERPOL related to your contribution, and you acknowledge that this does not create an obligation on the part of INTERPOL of any kind.
 Furthermore, your contributing to this project does not create an employer-employee relationship between INTERPOL and the contributor.
 
-##Acknoledgements
+## Acknoledgements
 This Contributor's Guide has been adapted from an original guide by the US Government [National Security Agency Github][nsa_git].
 
 [issues]: https://github.com/INTERPOL-Innovation-Centre/DN-CC-Taxonomy/issues
