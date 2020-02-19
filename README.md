@@ -12,3 +12,5 @@ Make sure SKOUT is installed
 
 	~/.mix/escripts/skout entity_taxonomy.yaml entity_taxonomy.ttl
 
+## Contribute
+Should you wish to contribute to this project, please review our [Contributor's page][CONTRIBUTING]
