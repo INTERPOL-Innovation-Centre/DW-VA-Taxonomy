@@ -1,6 +1,6 @@
-# Crytocurrency and Darknet Taxonomies
+# Dark Web and Crytocurrency Taxonomies
 
-This directory contains taxonomies covering common types of entities found in Darknet and Cryptocurrency Ecosystems, as well as abusive, possibly criminal behaviors found in real-world investigations.
+This directory contains taxonomies covering common types of entities found in Dark Web and Cryptocurrency Ecosystems, as well as abusive, possibly criminal behaviors found in real-world investigations.
 
 Concept definitions follow the [Simple Knowledge Organization System (SKOS)](https://www.w3.org/2004/02/skos/).
 
