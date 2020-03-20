@@ -1,0 +1,15 @@
+$bgcolor: lightblue;
+
+main {
+	.container {
+		padding: 60px 60px 0;
+	}
+}
+
+footer {
+	background-color: $bgcolor;
+	.container {
+		padding-right: 15px;
+  		padding-left: 15px;
+	}
+}
