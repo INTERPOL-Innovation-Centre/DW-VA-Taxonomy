@@ -2,3 +2,4 @@ Gemfile.lock
 _site
 .jekyll-cache
 *.sublime*
+.DS_Store
