@@ -19,7 +19,7 @@ Make sure you have [Jekyll][jekyll] installed
 
 Run Jekyll locally
 
-	bundle exec jekyll serve --watch
+	bundle exec jekyll serve --baseurl '' --watch
 
 Access the taxonomy website locallly using your browser
 
