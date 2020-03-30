@@ -4,11 +4,13 @@ description: >-
   Here we should come up with some meaningful description explaining
   what we are doing.
 baseurl: ""
-url: ""
+url: "https://interpol-innovation-centre.github.io/DW-CC-Taxonomy/"
 
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 sass:
   style: compact # possible values: nested expanded compact compressed
