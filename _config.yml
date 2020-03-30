@@ -4,7 +4,7 @@ description: >-
   Here we should come up with some meaningful description explaining
   what we are doing.
 baseurl: ""
-url: "https://interpol-innovation-centre.github.io/DW-CC-Taxonomy/"
+url: "https://interpol-innovation-centre.github.io/DW-CC-Taxonomy"
 
 # Build settings
 plugins:
