@@ -113,6 +113,25 @@ mixing_service:
   seeAlso: https://en.wikipedia.org/wiki/Cryptocurrency_tumbler
   broader: service
 
+miner:
+  id: miner
+  type: concept
+  prefLabel: Miner
+  description: >
+    A service that processes and verifies transactions for various forms of cryptoassets and
+    creates blocks to be added to the blockchain digital ledger.
+  broader: service
+
+gambling:
+  id: gambling
+  type: concept
+  prefLabel: Gambling Service
+  description: >
+     A gambling service support the wagering of money or something of value (e.g., tokens) on an event
+     with an uncertain outcome, with the primary intent of winning money or material goods.
+  broader: service
+  seeAlso: https://en.wikipedia.org/wiki/Gambling
+
 search_engine:
   id: search_engine
   type: concept
