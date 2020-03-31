@@ -1,0 +1,136 @@
+scheme:
+  type: conceptScheme
+  title: Entity Types
+  creator: INTERPOL Darknet and Cryptocurrencies Working Group
+  description: >
+   This taxonomy defines entities that represent real-world actors
+   and service that are part of a larger Darknet- and Cryptoasset Ecosystems.
+  default_language: en
+
+entity:
+  id: entity
+  type: concept
+  prefLabel: Entity
+  description: >
+    An actor is anything playing an active role in Darknets or Cryptoasset
+    ecosystems. This subsumes individuals and organizations as well as automated
+    services fulfilling a certain function in such environments.
+  narrower: [organization, user, service]
+
+organization:
+  id: organization
+  type: concept
+  prefLabel: Organization
+  description: >
+    An organization represents some social institution, such as public services
+    or companies.
+  broader: entity
+
+user:
+  id: user
+  type: concept
+  prefLabel: User
+  description: >
+    A user is a person who utilizes Darknet or Cryptoasset infrastructures
+    and / or offered services.
+  broader: entity
+
+service:
+  id: service
+  type: concept
+  prefLabel: Service
+  description: >
+    A service refers to some software functionality or a set of software functionalities
+    that can be used by different actors for difffent purposes.
+  broader: actor
+  narrower: [exchange, filesharing, index, market, messaging_service, mixing_service, search_engine, shop]
+
+exchange:
+  id: exchange
+  type: concept
+  prefLabel: Exchange
+  description: >
+    A cryptocurrency exchange or a digital currency exchange (DCE)
+    is a business that allows customers to trade cryptocurrencies or
+    digital currencies for other assets, such as conventional fiat
+    money or other digital currencies. A cryptocurrency exchange can
+    be a market maker that typically takes the bid-ask spreads as a
+    transaction commission for is service or, as a matching platform,
+    simply charges fees.
+  seeAlso: https://en.wikipedia.org/wiki/Cryptocurrency_exchange
+  broader: service
+
+filesharing:
+  id: filesharing
+  type: concept
+  prefLabel: File Sharing
+  description: >
+    A file sharing service provides access to digital media, such as computer programs,
+    multimedia (audio, images and video), documents or electronic books.
+  seeAlso: https://en.wikipedia.org/wiki/File_sharing
+  broader: service
+
+index:
+  id: index
+  type: concept
+  prefLabel: Index
+  description: >
+    An index refers the contents of other websites in the Dark- or Clearnet.
+  seeAlso: https://en.wikipedia.org/wiki/Web_indexing
+  broader: service
+
+market:
+  id: market
+  type: concept
+  prefLabel: Market
+  description: >
+     A market, or marketplace, is an online location where users purchase and sale 
+     legitimate or illegitimate goods and services.
+  seeAlso: https://en.wikipedia.org/wiki/Marketplace
+  broader: service  
+
+messaging_service:
+  id: messaging_service
+  type: concept
+  prefLabel: Messaging Service
+  description: >
+    A messaging service is a type of online chat that offers real-time transmission
+    of messages over the Internet.
+  seeAlso: https://en.wikipedia.org/wiki/Instant_messaging
+  broader: service
+
+mixing_service:
+  id: mixing_service
+  type: concept
+  prefLabel: Mixing Service
+  description: >
+    A tumbler or mixing service is a service offered to mix potentially identifiable
+    or 'tainted' cryptoasset funds with others, so as to obscure the trail back to the
+    fund's original source. Tumblers have arisen to improve the anonymity of cryptocurrencies,
+    usually bitcoin (hence Bitcoin mixer), since the currencies provide a public ledger of all transactions.
+  seeAlso: https://en.wikipedia.org/wiki/Cryptocurrency_tumbler
+  broader: service
+
+search_engine:
+  id: search_engine
+  type: concept
+  prefLabel: Search Engine
+  description: >
+    A web search engine or Internet search engine is a software system that is designed to
+    carry out web search (Internet search), which means to search the World Wide Web in a
+    systematic way for particular information specified in a textual web search query.
+    The search results are generally presented in a line of results, often referred to as
+    search engine results pages (SERPs). The information may be a mix of links to web pages,
+    images, videos, infographics, articles, research papers, and other types of files.
+  seeAlso: https://en.wikipedia.org/wiki/Web_search_engine
+  broader: service
+
+shop:
+  id: shop
+  type: concept
+  prefLabel: Shop
+  description: >
+     A shop allows consumers to directly buy goods or services from a seller over the
+     Internet using a web browser.
+  seeAlso: https://en.wikipedia.org/wiki/Online_shopping
+  broader: service
