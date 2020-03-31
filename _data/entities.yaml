@@ -1,6 +1,8 @@
 scheme:
   type: conceptScheme
-  title: Entity Types
+  version: 0.1
+  lastmod: 2020-03-31
+  title: Entity Taxonomy
   creator: INTERPOL Darknet and Cryptocurrencies Working Group
   description: >
    This taxonomy defines entities that represent real-world actors
