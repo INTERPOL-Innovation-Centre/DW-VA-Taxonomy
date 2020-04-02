@@ -37,7 +37,7 @@
 
       <dt class="col-sm-3">URI</dt>
       <dd class="col-sm-9"><a href="{{ site.url }}{{ site.baseurl }}{{ page.url }}#{{ concept.id }}">
-        {{ site.url }}{{ page.url }}#{{ concept.id }}</a>
+        {{ site.url }}{{ site.baseurl }}{{ page.url }}#{{ concept.id }}</a>
       </dd>
 
       <dt class="col-sm-3">Description</dt>
@@ -52,7 +52,7 @@
         <dt class="col-sm-3">Narrower Concepts</dt>
         <dd class="col-sm-9">
           {% for narrower in concept.narrower %}
-            <a href="{{ site.url }}{{ page.url }}#{{ narrower }}">{{ narrower | capitalize }}</a>
+            <a href="{{ site.url }}{{ site.baseurl }}{{ page.url }}#{{ narrower }}">{{ narrower | capitalize }}</a>
             {% unless forloop.last %}|{% endunless %}
           {% endfor %}
         </dd>
@@ -62,7 +62,7 @@
         <dt class="col-sm-3">Broader Concepts</dt>
         <dd class="col-sm-9">
           {% for broader in concept.broader %}
-            <a href="{{ site.url }}{{ page.url }}#{{ broader }}">{{ broader | capitalize }}</a>
+            <a href="{{ site.url }}{{ site.baseurl }}{{ page.url }}#{{ broader }}">{{ broader | capitalize }}</a>
             {% unless forloop.last %}|{% endunless %}
           {% endfor %}
         </dd>
