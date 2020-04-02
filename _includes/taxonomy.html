@@ -19,7 +19,7 @@
   <h3>Concept Index</h3>
 
   {% for concept in concepts %}
-    <a href="{{ site.url }}{{ page.url }}#{{ concept.id }}">{{ concept.prefLabel }}</a>
+    <a href="{{ site.url }}{{ site.baseurl }}{{ page.url }}#{{ concept.id }}">{{ concept.prefLabel }}</a>
     {% unless forloop.last %}|{% endunless %}
   {% endfor %}
 
@@ -36,7 +36,7 @@
       <dd class="col-sm-9"><strong>{{ concept.prefLabel }}</strong></dd>
 
       <dt class="col-sm-3">URI</dt>
-      <dd class="col-sm-9"><a href="{{ site.url }}{{ page.url }}#{{ concept.id }}">
+      <dd class="col-sm-9"><a href="{{ site.url }}{{ site.baseurl }}{{ page.url }}#{{ concept.id }}">
         {{ site.url }}{{ page.url }}#{{ concept.id }}</a>
       </dd>
 
