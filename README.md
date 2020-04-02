@@ -108,7 +108,7 @@ Should you wish to contribute to this project, please review our [Contributor's 
 
 ## FAQ
 
-** Why are taxonomies represented in YAML and not in a widely accept SKOS serialization format?
+** Why are taxonomies represented in YAML and not in a widely accept SKOS serialization format? **
 
 Well, mostly for technical and usability reasons. Jekyll can read and parse YAML files and also people with minimal dev skills can most likely create and/or modify a YAML file. RDF and other formats certainly have a higher entry barrier. However, our taxonomies follow the SKOS standard and can therefore be easily converted. If required, we can do this in future releases.
 
