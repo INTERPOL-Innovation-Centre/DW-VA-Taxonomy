@@ -1,0 +1,7 @@
+id,uri,label,description
+scam,https://interpol-innovation-centre.github.io/DW-CC-Taxonomy/taxonomies/abuses#scam,Scam,Scam denotes a fraudulent or deceptive act or operation.
+sextortion,https://interpol-innovation-centre.github.io/DW-CC-Taxonomy/taxonomies/abuses#sextortion,Sextortion,"Sextortion refers to the broad category of sexual exploitation in which abuse of power is the means of coercion, as well as to the category of sexual exploitation in which threatened release of sexual images or information is the means of coercion."
+phishing,https://interpol-innovation-centre.github.io/DW-CC-Taxonomy/taxonomies/abuses#phishing,Phishing,"Phishing is the fraudulent attempt to obtain sensitive information such as usernames, passwords and credit card details by disguising oneself as a trustworthy entity in an electronic communication."
+service_hack,https://interpol-innovation-centre.github.io/DW-CC-Taxonomy/taxonomies/abuses#service_hack,Service Hack,A service hack denotes the digital intrusion into a service with the goal to steal funds.
+ransomware,https://interpol-innovation-centre.github.io/DW-CC-Taxonomy/taxonomies/abuses#ransomware,Ransomware,Ransomware is a type of malware from cryptovirology that threatens to publish the victim's data or perpetually block access to it unless a ransom is paid.
+ponzi_scheme,https://interpol-innovation-centre.github.io/DW-CC-Taxonomy/taxonomies/abuses#ponzi_scheme,Ponzi Scheme,A Ponzi scheme is a form of fraud that lures investors and pays profits to earlier investors with funds from more recent investors

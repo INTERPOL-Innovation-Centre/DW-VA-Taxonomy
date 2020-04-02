@@ -1,4 +1,6 @@
 scheme:
+  baseurl: /taxonomies/entities
+  csvfile: assets/data/entities.csv  
   type: conceptScheme
   version: 0.1
   lastmod: 2020-03-31

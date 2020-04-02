@@ -94,7 +94,7 @@ we receive and the availability of resources to evaluate contributions, we antic
 ## Legal
 
 Consistent with Section D.6. of the GitHub Terms of Service as of 2019, and Section 5. of the Apache License, Version 2.0, the project maintainer for this project accepts contributions using the inbound=outbound model.
-When you submit a pull request to this repository (inbound), you are agreeing to license your contribution under the same terms as specified in [LICENSE] (outbound).
+When you submit a pull request to this repository (inbound), you are agreeing to license your contribution under the same terms as specified in [LICENSE](LICENSE).
 
 This is an open source project.
 Contributions you make to this public repository are completely voluntary.

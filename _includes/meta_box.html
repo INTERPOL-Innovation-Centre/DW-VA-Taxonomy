@@ -1,18 +1,25 @@
 {% assign taxonomy = include.taxonomy %}
-{% assign path = include.path %}
 {% assign icon = include.icon %}
-
 
 <div class="col-md-6">
   <div class="card flex-md-row mb-4 box-shadow h-100">
     <div class="card-body d-flex flex-column align-items-start">
       <h3 class="mb-0">
         <i class="fa {{ icon }}"></i>
-        <a class="text-dark" href="{{ site.baseurl }}{{ path }}">{{ taxonomy.scheme.title }}</a>
+        <a class="text-dark" href="{{ site.baseurl }}{{ taxonomy.scheme.baseurl }}">{{ taxonomy.scheme.title }}</a>
       </h3>
       <div class="mb-1 text-muted">Version {{ taxonomy.scheme.version}}</div>
       <p class="card-text mb-auto">{{ taxonomy.scheme.description}}</p>
-      <a href="{{ site.baseurl }}{{ path }}">View terms</a>
+      <span>
+        <a href="{{ site.baseurl }}{{ taxonomy.scheme.baseurl }}">
+          <i class="fa fa-eye"></i>
+          View concepts
+        </a> |
+        <a href="{{ site.baseurl }}{{ taxonomy.scheme.csvfile }}">
+          <i class="fa fa-download"></i>
+          Download concepts
+        </a>
+      </span>
     </div>
   </div>
 </div>

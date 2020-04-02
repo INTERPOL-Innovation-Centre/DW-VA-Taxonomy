@@ -1,4 +1,6 @@
 scheme:
+  baseurl: /taxonomies/abuses
+  csvfile: assets/data/abuses.csv
   type: conceptScheme
   version: 0.1
   lastmod: 2020-03-31
