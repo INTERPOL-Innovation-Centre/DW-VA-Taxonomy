@@ -1,15 +1,15 @@
-# Dark Web and Cryptoasset Taxonomies
+# Dark Web and Virtual Assets Taxonomies
 
-This repository contains taxonomies covering common types of entities found in Dark Web and Cryptoasset ecosystems, as well as abusive, possibly criminal behaviors found in real-world investigations.
+This repository contains taxonomies covering common types of entities found in Dark Web and Virtual Assets ecosystems, as well as abusive, possibly criminal behaviors found in real-world investigations.
 
-Taxonomies are defined as [YAML][yaml] files and automatically rendered as a human-readable Website by using the [Jekyll][jekyll] static site generator: https://interpol-innovation-centre.github.io/DW-CC-Taxonomy/
+Taxonomies are defined as [YAML][yaml] files and automatically rendered as a human-readable Website by using the [Jekyll][jekyll] static site generator: https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/
 
 ## How to run the Website locally
 
 Checkout this git repository to your local machine
 
-	git clone git@github.com:INTERPOL-Innovation-Centre/DW-CC-Taxonomy.git
-	cd DW-CC-Taxonomy
+	git clone git@github.com:INTERPOL-Innovation-Centre/DW-VA-Taxonomy.git
+	cd DW-VA-Taxonomy
 
 Make sure you have [Jekyll][jekyll] installed
 
@@ -82,7 +82,7 @@ Then run the conversion script by passing the taxonomy YAML files and an optiona
 This converts each YAML file into a corresponding CSV file, which can then be integrated by client applications that make use of that taxonomy.
 
 	id,uri,label,description
-	exchange,https://interpol-innovation-centre.github.io/DW-CC-Taxonomy/taxonomies/entities#exchange,Exchange,"A cryptocurrency exchange or a digital currency exchange (DCE) is a business that allows customers to trade cryptocurrencies or digital currencies for other assets, such as conventional fiat money or other digital currencies. A cryptocurrency exchange can be a market maker that typically takes the bid-ask spreads as a transaction commission for is service or, as a matching platform, simply charges fees."
+	exchange,https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#exchange,Exchange,"A cryptocurrency exchange or a digital currency exchange (DCE) is a business that allows customers to trade cryptocurrencies or digital currencies for other assets, such as conventional fiat money or other digital currencies. A cryptocurrency exchange can be a market maker that typically takes the bid-ask spreads as a transaction commission for is service or, as a matching platform, simply charges fees."
 
 After conversion, these files must be added and committed in order to show up on the Website.
 

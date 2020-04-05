@@ -1,4 +1,6 @@
 $interpol: #00457D;
+$AIT_grey: #5c6f77;
+$AIT_red: #790b1b;
 
 $link_color: $interpol;
 $link_color_hover: grey;
@@ -48,14 +50,28 @@ body {
 	}
 }
 
-
 main {
 	.container {
 		padding: 60px 60px 0;
+		border: 2px;
+		border-color: $interpol;
+	}
+	.tile {
+		width: 40%;
+		padding: 15px 30px 15px;
+		margin: 10px;
+		border: 1px solid $AIT_grey;
 	}
 	i {
 		color: $interpol;
 	}
+	.card-body { height: 300px; }
+	.card-img-center {
+  		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+	}
+	img.bd-placeholder-img { height: 180px; }
 }
 
 footer {
@@ -64,3 +80,7 @@ footer {
   		padding-left: 15px;
 	}
 }
+
+/* Colors for AIT Logo on About page Partners */
+.ait {fill: $AIT_grey}
+svg {fill: $AIT_red}
