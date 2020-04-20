@@ -64,6 +64,15 @@ exchange:
   seeAlso: https://en.wikipedia.org/wiki/Cryptocurrency_exchange
   broader: service
 
+wallet_service:
+  id: wallet_service
+  type: concept
+  prefLabel: Wallet Service
+  description: >
+    A wallet is a software or web service that custodizes and utilizes cryptoasset
+    keys on behalf of their users.
+  broader: service
+    
 filesharing:
   id: filesharing
   type: concept
