@@ -60,7 +60,7 @@ and [narrower](https://www.w3.org/2009/08/skos-reference/skos.html#narrower) rel
 	  seeAlso: https://en.wikipedia.org/wiki/Cryptocurrency_exchange
 	  broader: service
 
-A taxonomy can be modified by changing these defintions.
+A taxonomy can be modified by changing these defintions. 
 
 ## How to generate downloadable CSV files from defined taxonomies
 
