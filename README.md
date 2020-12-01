@@ -77,7 +77,7 @@ Before running the script, make sure you have Python3 up and running and install
 
 Then run the conversion script by passing the taxonomy YAML files and an optional output folder (which is `assets/data` by default.
 
-	./scripts/convert.py -t _data/*.yaml -d assets/data	
+	./scripts/convert.py -t _data/*.yaml -d assets/data
 
 This converts each YAML file into a corresponding CSV file, which can then be integrated by client applications that make use of that taxonomy.
 
@@ -87,7 +87,7 @@ This converts each YAML file into a corresponding CSV file, which can then be in
 After conversion, these files must be added and committed in order to show up on the Website.
 
 	git add assets/data
-	git commit -m "updated taxonomy serializion"
+	git commit -m "updated taxonomy serialization"
 
 ## How to contribute
 

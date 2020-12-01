@@ -46,7 +46,7 @@ service:
   description: >
     A service refers to some software functionality or a set of software functionalities
     that can be used by different actors for difffent purposes.
-  broader: actor
+  broader: entity
   narrower: [exchange, filesharing, index, market, messaging_service, mixing_service, search_engine, shop]
 
 exchange:
