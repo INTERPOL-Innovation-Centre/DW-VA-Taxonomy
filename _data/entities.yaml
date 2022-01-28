@@ -1,168 +1,837 @@
 scheme:
   baseurl: /taxonomies/entities
-  csvfile: /assets/data/entities.csv  
+  csvfile: /assets/entities.csv
   type: conceptScheme
-  version: 0.1
-  lastmod: 2020-03-31
+  version: '0.3'
   title: Entity Taxonomy
-  creator: INTERPOL Darknet and Cryptocurrencies Working Group
-  description: >
-   This taxonomy defines entities that represent real-world actors
-   and service that are part of a larger Darknet- and Cryptoasset Ecosystems.
+  creator: INTERPOL Darkweb and Virtual Assets Working Group
+  description: This taxonomy defines entities that represent real-world actors and
+    service that are part of a larger Darknet- and Cryptoasset Ecosystems.
   default_language: en
-
-entity:
-  id: entity
+  lastmod: 2022-01-21
+"dapp_\u2013_decentralized_apps":
+  id: "dapp_\u2013_decentralized_apps"
+  prefLabel: Decentralized Apps
   type: concept
-  prefLabel: Entity
-  description: >
-    An actor is anything playing an active role in Darknets or Cryptoasset
-    ecosystems. This subsumes individuals and organizations as well as automated
-    services fulfilling a certain function in such environments.
-  narrower: [organization, user, service]
-
-organization:
-  id: organization
+  description: 'An application that does not rely on a central server but on several
+    decentralized nodes. Each user can choose to be an active node serving the app. '
+  broader: infrastructure
+hardware_wallet:
+  id: hardware_wallet
+  prefLabel: Hardware Wallet
   type: concept
-  prefLabel: Organization
-  description: >
-    An organization represents some social institution, such as public services
-    or companies.
-  broader: entity
-
-user:
-  id: user
+  description: A [hardware] cryptocurrency wallet is a device, physical medium, (...)
+    which stores the private keys for cryptocurrency transactions. It will normally
+    also contain the associated public keys.
+  broader: wallet
+dht_distributed_hash_technology:
+  id: dht_distributed_hash_technology
+  prefLabel: Distributed Hash Technology
   type: concept
-  prefLabel: User
-  description: >
-    A user is a person who utilizes Darknet or Cryptoasset infrastructures
-    and / or offered services.
-  broader: entity
-
+  description: A decentralized distributed system that provides sharing contact information,
+    so people downloading the same file can discover each other. Both Tor and I2P
+    use DHT. Due to the distributed nature of the hidden services domain resolution,
+    it is possible to deploy nodes in the DHT to monitor requests coming from a given
+    domain.
+  broader: technology
+BTC:
+  id: BTC
+  prefLabel: Bitcoin
+  type: concept
+  description: Bitcoin is a network protocol based on blockchain, introduced by Nakamoto
+    [11] which allows payments and coin transfers to be made among participating entities.
+    No trusted
+  broader: cryptocurrency
 service:
   id: service
-  type: concept
   prefLabel: Service
-  description: >
-    A service refers to some software functionality or a set of software functionalities
-    that can be used by different actors for difffent purposes.
-  broader: entity
-  narrower: [exchange, filesharing, index, market, messaging_service, mixing_service, search_engine, shop]
-
-exchange:
-  id: exchange
   type: concept
-  prefLabel: Exchange
-  description: >
-    A cryptocurrency exchange or a digital currency exchange (DCE)
-    is a business that allows customers to trade cryptocurrencies or
-    digital currencies for other assets, such as conventional fiat
-    money or other digital currencies. A cryptocurrency exchange can
-    be a market maker that typically takes the bid-ask spreads as a
-    transaction commission for is service or, as a matching platform,
-    simply charges fees.
-  seeAlso: https://en.wikipedia.org/wiki/Cryptocurrency_exchange
+  description: A service refers to some software functionality or a set of software
+    functionalities that can be used by different actors for difffent purposes.
+  broader: entity2
+counterfeit_product:
+  id: counterfeit_product
+  prefLabel: Counterfeit product
+  type: concept
+  description: Counterfeit consumer goods are goods, often of inferior quality, made
+    or sold under another's brand name without the brand owner's authorization.
+  broader: asset
+entity2:
+  id: entity2
+  prefLabel: DWVA Entity
+  type: concept
+  description: An entity is anything that can be found and that could be reported
+    in the context of Dark Web & Virtual Assets investigations.
+shop_owner:
+  id: shop_owner
+  prefLabel: Shop owner
+  type: concept
+  description: A shop owner is an actor within the group of Criminal Actors; operating
+    a DW shop.
+  broader: actor
+authorities:
+  id: authorities
+  prefLabel: Authorities
+  type: concept
+  description: A group of actors in the field of Law Enforcement and/or state actors
+  broader: actor
+hierarchically_deterministic_wallets:
+  id: hierarchically_deterministic_wallets
+  prefLabel: Hierarchically Deterministic wallets
+  type: concept
+  description: 'An HD (Hierarchical Deterministic) Wallet is a tree of private/public
+    keypairs starting from a master seed. This technology provides both account management
+    and identity masking. A user only needs to keep the master seeds because she can
+    generate following keypairs from the root key deterministically, and each public
+    key that can be exposed is changed for each transaction. '
+  broader: technology
+non-fungible-token:
+  id: non-fungible-token
+  prefLabel: Non Fungible Token
+  type: concept
+  description: A non-fungible token (NFT) is a unit of data stored on a digital ledger,
+    called a blockchain, that certifies a digital asset to be unique and therefore
+    not interchangeable. NFTs can be used to represent items such as photos, videos,
+    audio, and other types of digital files.
+  broader: technology
+  seeAlso: https://en.wikipedia.org/wiki/Non-fungible_token
+dark_web:
+  id: dark_web
+  prefLabel: Dark Web
+  type: concept
+  description: A Darknet is to the Dark Web what the World Wide Web is to the internet.
+    There are many Darknets forming the Dark Web.
+  broader: infrastructure
+bulletproof_hosting:
+  id: bulletproof_hosting
+  prefLabel: Bulletproof Hosting
+  type: concept
+  description: 'A (hosting) service that guarantees the availability of hosted resources
+    even when they are found to be malicious or illegal. '
   broader: service
-
-wallet_service:
-  id: wallet_service
+darknet_wiki:
+  id: darknet_wiki
+  prefLabel: Darknet Wiki
   type: concept
-  prefLabel: Wallet Service
-  description: >
-    A wallet is a software or web service that custodizes and utilizes cryptoasset
-    keys on behalf of their users.
+  description: Wiki services, including directory services for other hidden services,
+    hosted in the Dark Web.
   broader: service
-    
-filesharing:
-  id: filesharing
+pos_proof_of_stake:
+  id: pos_proof_of_stake
+  prefLabel: Proof of Stake
   type: concept
-  prefLabel: File Sharing
-  description: >
-    A file sharing service provides access to digital media, such as computer programs,
-    multimedia (audio, images and video), documents or electronic books.
-  seeAlso: https://en.wikipedia.org/wiki/File_sharing
+  description: 'In a Proof of Stake (PoS) network, users need to prove ownership of
+    enough stakes to become validators. Ethereum (ETH) is moving from PoW to PoS.
+    PoS offers several advantages over PoW: it is energy efficient, reduces hardware
+    requirements and is less prone to centralisation '
+  broader: technology
+multisig:
+  id: multisig
+  prefLabel: Multisig
+  type: concept
+  description: Multisig refers to all the transactions that require two or more signatures.
+    Multisignature transactions and addresses are validated only when at least x of
+    the possible y signatories have signed. x and y are defined at creation.
+  broader: process
+ZEC:
+  id: ZEC
+  prefLabel: Zcash
+  type: concept
+  description: 'A cryptocurrency with a decentralized Blockchain that provides anonymity
+    for its users and their transactions. It is similar to Bitcoin as an open-source,
+    but their major differences are the increased level of privacy it provides. '
+  broader: cryptocurrency
+fe_finalize_early:
+  id: fe_finalize_early
+  prefLabel: Finalize Early
+  type: concept
+  description: Buyers may "finalize early" (FE), releasing funds from escrow to the
+    vendor prior to receiving their goods in order to expedite a transaction. This
+    can be done when there is a trust relationship between vendor and buyer, however
+    it does leave the buyer vulnerable to fraud if they choose to do so.
+  broader: process
+coin_swapping:
+  id: coin_swapping
+  prefLabel: Coin swapping
+  type: concept
+  description: CoinSwap is a protocol to make a transaction via a third party to obfuscate
+    the money flow. For instance, when Alice would like to pay Bob, Carol offers to
+    receive Alice's coin and pay Bob with an unconnected coin. While none of these
+    parties trusts each other, this protocol does not allow Carol to rob Alice's coin.
   broader: service
-
-index:
-  id: index
+XRP:
+  id: XRP
+  prefLabel: Ripple
   type: concept
-  prefLabel: Index
-  description: >
-    An index refers the contents of other websites in the Dark- or Clearnet.
-  seeAlso: https://en.wikipedia.org/wiki/Web_indexing
+  description: Ripple is a real-time gross settlement system, currency exchange and
+    remittance network created by Ripple Labs Inc., a US-based technology company.
+    (...)  The ledger employs the native cryptocurrency known as XRP.
+  broader: cryptocurrency
+vendor:
+  id: vendor
+  prefLabel: Vendor
+  type: concept
+  description: Someone who is selling something.
+  broader: actor
+  seeAlso: https://dictionary.cambridge.org/dictionary/english/vendor
+ico:
+  id: ico
+  prefLabel: Initial Coin Offering / Initial Crypto-Tokens Offering
+  type: concept
+  description: Initial Coin Offerings (ICO) are public offers of  new cryptocurrencies
+    in exchange of existing ones, aimed to  finance projects in the blockchain development
+    arena. The typical pattern is for a startup to produce a white paper that describes
+    their business model and technical approach. The white paper includes details
+    about the functions that the tokens issued during the ICO will perform and the
+    process of token creation.
   broader: service
-
-market:
-  id: market
+layer-2:
+  id: layer-2
+  prefLabel: Layer 2
   type: concept
-  prefLabel: Market
-  description: >
-     A market, or marketplace, is an online location where users purchase and sale 
-     legitimate or illegitimate goods and services.
-  seeAlso: https://en.wikipedia.org/wiki/Marketplace
-  broader: service  
-
-messaging_service:
-  id: messaging_service
+  description: Layer 2 is a collective term for solutions designed to help scale decentralised
+    applications by handling transactions off the Ethereum mainnet (layer 1), while
+    taking advantage of the robust decentralized security model of mainnet.
+  broader: technology
+  seeAlso: https://ethereum.org/en/developers/docs/scaling/layer-2-rollups
+virtual_asset_service_provider:
+  id: virtual_asset_service_provider
+  prefLabel: Virtual Asset Service Provider
   type: concept
-  prefLabel: Messaging Service
-  description: >
-    A messaging service is a type of online chat that offers real-time transmission
-    of messages over the Internet.
-  seeAlso: https://en.wikipedia.org/wiki/Instant_messaging
+  description: "Virtual asset service provider means any natural or legal person who\
+    \ (...) as a business conducts one or more of the following activities or operations\
+    \ for or on behalf of another natural or legal person: i) exchange between virtual\
+    \ assets and fiat currencies; ii) exchange between one or more forms of virtual\
+    \ assets; iii) transfer of virtual assets; iv) safekeeping and/or administration\
+    \ of virtual assets or instruments enabling control over virtual assets; and v)\
+    \ participation in and provision of financial services related to an issuer\u2019\
+    s offer and/or sale of a virtual asset."
+  broader: actor
+dex:
+  id: dex
+  prefLabel: Decentralized Exchange
+  type: concept
+  description: Same as exchange but in a completely distributed environment. There
+    is no central hosting server and all nodes are servers.
   broader: service
-
-mixing_service:
-  id: mixing_service
+metadata:
+  id: metadata
+  prefLabel: Metadata
   type: concept
-  prefLabel: Mixing Service
-  description: >
-    A tumbler or mixing service is a service offered to mix potentially identifiable
-    or 'tainted' cryptoasset funds with others, so as to obscure the trail back to the
-    fund's original source. Tumblers have arisen to improve the anonymity of cryptocurrencies,
-    usually bitcoin (hence Bitcoin mixer), since the currencies provide a public ledger of all transactions.
-  seeAlso: https://en.wikipedia.org/wiki/Cryptocurrency_tumbler
-  broader: service
-
-miner:
-  id: miner
+  description: 'Refers to data that provides information about a certain item''s content.
+    For example, an image may include information that describes how large the picture
+    is or when the image was created, while a text document may contain information
+    about the author of the document, or the IP address of the document''s author,
+    and so on. '
+  broader: technology
+exit-scam:
+  id: exit-scam
+  prefLabel: Exit scam
   type: concept
-  prefLabel: Miner
-  description: >
-    A service that processes and verifies transactions for various forms of cryptoassets and
-    creates blocks to be added to the blockchain digital ledger.
-  broader: service
-
-gambling:
-  id: gambling
+  description: An exit scam can be performed by a dark net martket or single vendor
+    shop and is the process in which the one or more of the market admins prevents
+    users withdrawing funds through the escrow system and then closes the market,
+    exiting with all the bitcoins and other digital currencies they were holding in
+    escrow.
+  broader: process
+smart_contract:
+  id: smart_contract
+  prefLabel: Smart contract
   type: concept
-  prefLabel: Gambling Service
-  description: >
-     A gambling service support the wagering of money or something of value (e.g., tokens) on an event
-     with an uncertain outcome, with the primary intent of winning money or material goods.
-  broader: service
-  seeAlso: https://en.wikipedia.org/wiki/Gambling
-
-search_engine:
-  id: search_engine
+  description: A smart contract is a self-executing contract with the terms of the
+    agreement between buyer and seller being directly written into lines of code.
+    The code and the agreements contained therein exist across a distributed, decentralized
+    blockchain network. The code controls the execution, and transactions are trackable
+    and irreversible.
+  broader: technology
+service-provider:
+  id: service-provider
+  prefLabel: Service Provider
   type: concept
-  prefLabel: Search Engine
-  description: >
-    A web search engine or Internet search engine is a software system that is designed to
-    carry out web search (Internet search), which means to search the World Wide Web in a
-    systematic way for particular information specified in a textual web search query.
-    The search results are generally presented in a line of results, often referred to as
-    search engine results pages (SERPs). The information may be a mix of links to web pages,
-    images, videos, infographics, articles, research papers, and other types of files.
-  seeAlso: https://en.wikipedia.org/wiki/Web_search_engine
+  description: An actor that provides a service by making available and managing infrastructure
+    or by executing a process
+  broader: actor
+cryptocurrency:
+  id: cryptocurrency
+  prefLabel: Cryptocurrency
+  type: concept
+  description: A cryptocurrency, crypto-currency, or crypto is a digital asset designed
+    to work as a medium of exchange wherein individual coin ownership records are
+    stored in a ledger existing in a form of a computerized database using strong
+    cryptography to secure transaction records, to control the creation of additional
+    coins, and to verify the transfer of coin ownership.
+  broader: asset
+administrator:
+  id: administrator
+  prefLabel: Administrator
+  type: concept
+  description: An actor whose job it is to supervise the technical operation of a
+    service
+  broader: actor
+virtual_asset_:
+  id: virtual_asset_
+  prefLabel: 'Virtual Asset '
+  type: concept
+  description: A virtual asset is a digital representation of value that can be digitally
+    traded, or transferred, and can be used for payment or investment purposes. Virtual
+    assets do not include digital representations of fiat currencies, securities and
+    other financial assets that are already covered elsewhere in the FATF Recommendations.
+  broader: asset
+darknet_forum:
+  id: darknet_forum
+  prefLabel: Darknet Forum
+  type: concept
+  description: Forum services hosted in the Dark Web.
   broader: service
-
 shop:
   id: shop
-  type: concept
   prefLabel: Shop
-  description: >
-     A shop allows consumers to directly buy goods or services from a seller over the
-     Internet using a web browser.
-  seeAlso: https://en.wikipedia.org/wiki/Online_shopping
+  type: concept
+  description: A shop is a service where products from one actor (the shop owner)
+    are traded.
   broader: service
+hosted-wallet:
+  id: hosted-wallet
+  prefLabel: Hosted wallet
+  type: concept
+  description: A digital account hosted by third party financial institution, known
+    as Virtual Asset Service Provider(VASP), which allows the account-holder (the
+    user) to store, send, and receive cryptocurrency.
+  broader: wallet
+  seeAlso: https://home.treasury.gov/system/files/136/2020-12-18-FAQs.pdf
+dot_onion:
+  id: dot_onion
+  prefLabel: .Onion
+  type: concept
+  description: "A special-use top level domain name designating an anonymous onion\
+    \ service, which was formerly known as a \"hidden service\". It is referred to\
+    \ as that because of the \u201Clayered\u201D approach to relays on the Tor Browser."
+  broader: technology
+bridge:
+  id: bridge
+  prefLabel: Bridge
+  type: concept
+  description: Blockchain bridges enable interoperability between vastly different
+    networks, such as Bitcoin and Ethereum, and between one parent blockchain and
+    its sidechains.
+  broader: technology
+  seeAlso: https://blog.makerdao.com/what-are-blockchain-bridges-and-why-are-they-important-for-defi/
+unhosted-wallet:
+  id: unhosted-wallet
+  prefLabel: Unhosted wallet
+  type: concept
+  description: A wallet that is not hosted by a third-party financial system. It can
+    be very difficult or impossible to determine who is accessing or in control of
+    the use of cryptocurrencies in an unhosted wallet. Unhosted wallets allow for
+    anonymity and concealment of illicit financial activity.
+  broader: wallet
+  seeAlso: https://home.treasury.gov/system/files/136/2020-12-18-FAQs.pdf
+drop-ship:
+  id: drop-ship
+  prefLabel: Drop Ship
+  type: concept
+  description: "A vending tactic involving the vendor passing the buyer\u2019s address\
+    \ on to another vendor to ship to, eliminating any need for the middleman (dropshipper)\
+    \ to handle anything illegal in person."
+  seeAlso: DNM Bible Glossary
+sidechain:
+  id: sidechain
+  prefLabel: Sidechain
+  type: concept
+  description: A sidechain is a side blockchain that is linked to another blockchain,
+    referred to as the main chain, via a two-way peg.
+  broader: technology
+  seeAlso: https://coinmarketcap.com/alexandria/glossary/side-chain
+asset:
+  id: asset
+  prefLabel: Asset
+  type: concept
+  description: An item of value owned
+  broader: entity2
+flash-loan:
+  id: flash-loan
+  prefLabel: Flash Loan
+  type: concept
+  description: A cryptocurrency loan executed trough a smart contract, with no collateral,
+    that must be paid back in the same block. The purpose of a flash loan is to gain
+    money through arbitrage (on different exchanges or different assets) without providing
+    any collateral.
+  broader: technology
+  seeAlso: https://www.coindesk.com/what-is-a-flash-loan
+escrow:
+  id: escrow
+  prefLabel: Escrow
+  type: concept
+  description: An escrow is a contractual arrangement in which a third party (the
+    stakeholder or escrow agent) receives and disburses money or property for the
+    primary transacting parties, with the disbursement dependent on conditions agreed
+    to by the transacting parties.
+  broader: service
+pow_proof_of_work:
+  id: pow_proof_of_work
+  prefLabel: Proof of Work
+  type: concept
+  description: 'Bitcoin blockchain is constructed and validated by computation. Miners
+    work to validate the blockchain with their computation power, proving their work
+    for a reward. The Bitcoin Blockchain is based on Proof-of-Work. '
+  broader: technology
+tumbler:
+  id: tumbler
+  prefLabel: Tumbler
+  type: concept
+  description: "A method of scrambling or anonymizing the source of one\u2019s cryptocurrencies. "
+  broader: service
+utxo_unspent_transaction_output:
+  id: utxo_unspent_transaction_output
+  prefLabel: Unspent Transaction Output
+  type: concept
+  description: An unspent transaction output of cryptocurrencies. This output is considered
+    as an input to new transaction.
+  broader: technology
+crypto_assets:
+  id: crypto_assets
+  prefLabel: Crypto-assets
+  type: concept
+  description: A crypto-asset (...) is a digital asset designed to work as a medium
+    of exchange wherein individual coin ownership records are stored in a ledger existing
+    in a form of a computerized database using strong cryptography to secure transaction
+    records, to control the creation of additional coins, and to verify the transfer
+    of coin ownership.
+  broader: asset
+BCH:
+  id: BCH
+  prefLabel: Bitcoin cash
+  type: concept
+  description: Bitcoin Cash is a cryptocurrency that is a fork of Bitcoin. Bitcoin
+    Cash is a spin-off or altcoin that was created in 2017.
+  broader: cryptocurrency
+fiat_currencies:
+  id: fiat_currencies
+  prefLabel: FIAT currencies
+  type: concept
+  description: 'Fiat money is a currency (a medium of exchange) established as money,
+    often by government regulation. Fiat money does not have intrinsic value and does
+    not have use value. It has value only because a government maintains its value,
+    or because parties engaging in exchange agree on its value. '
+  broader: asset
+crypto_atm:
+  id: crypto_atm
+  prefLabel: Crypto ATM
+  type: concept
+  description: A Bitcoin ATM (Automated Teller Machine) is a kiosk that allows a person
+    to purchase Bitcoin and other cryptocurrencies by using cash or debit card. Some
+    types of ATM also allow users to sell their cryptocurrency, dispensing cash in
+    payment. Depending on the provider, the ATM can require KYC verification.
+  broader: service
+ETH:
+  id: ETH
+  prefLabel: Ethereum
+  type: concept
+  description: 'Ethereum is a decentralized, open-source blockchain with smart contract
+    functionality. Ether (ETH) is the native cryptocurrency of the platform. It is
+    the second-largest cryptocurrency by market capitalization, after Bitcoin. Ethereum
+    is the most actively used blockchain. '
+  broader: cryptocurrency
+yield-farming:
+  id: yield-farming
+  prefLabel: Yield farming
+  type: concept
+  description: A process that lets you earn either fixed or variable interest by investing
+    crypto in a DeFi market.
+  broader: process
+  seeAlso: https://decrypt.co/resources/what-is-yield-farming-beginners-guide
+I2P:
+  id: I2P
+  prefLabel: Invisible Internet Protocol
+  type: concept
+  description: "An \u201Canonymous overlay network\u201D using the garlic routing\
+    \ protocol that encrypts multiple messages together to make data traffic analysis\
+    \ difficult, while simultaneously increasing network traffic speed. Each encrypted\
+    \ message has its own specific delivery instruction, and each endpoint works as\
+    \ a cryptographic identifier or what we refer to as \u201Ckeys.\u201D Since I2P\
+    \ is entirely peer-to-peer in structure, there's no hard-coded trusted set of\
+    \ directory stores. Instead, the network directory of I2P is netDb, a distributed\
+    \ database that is replicated across the network."
+  broader: technology
+regulator:
+  id: regulator
+  prefLabel: Regulator
+  type: concept
+  description: Authority that defines (national) regulations
+  broader: authorities
+hidden_service:
+  id: hidden_service
+  prefLabel: Hidden Service
+  type: concept
+  description: A collective name used to describe websites which require a special
+    browser in order to access.
+  broader: technology
+relay_node:
+  id: relay_node
+  prefLabel: Relay (node)
+  type: concept
+  description: 'A relay is a node in the Tor network. When a request to access a particular
+    hidden service is made, the browser calculates the optimal route through a series
+    of relays, exchanging cryptographic keys between nodes, to display the content
+    without disclosing the IP address of the request originator.  Each relay decrypts
+    a layer of encryption to reveal the next relay in the circuit to pass the remaining
+    encrypted data on to it. The final relay decrypts the innermost layer of encryption
+    and sends the original data to its destination without revealing or knowing the
+    source IP address. '
+  broader: infrastructure
+bip_bitcoin_improvement_proposals:
+  id: bip_bitcoin_improvement_proposals
+  prefLabel: Bitcoin Improvement Proposals
+  type: concept
+  description: Bitcoin improvement proposals, these are the equivalent of RFCs. They
+    define the protocols and structures of Bitcoin. They are developed and maintained
+    at the Bitcoin Github.
+  broader: process
+defi:
+  id: defi
+  prefLabel: Decentralized Finances
+  type: concept
+  description: 'Smart Contracts on blockchains, DApps, mainly via the Ethereum technology
+    and network. They are used to provide traditional financial services. The technology
+    provides strong immunity against attackers and some level of anonymity and privacy.
+    Transactions are confirmed relatively fast, but mostly lack KYC and AML compliance
+    controls and offer limited to no user support and customer care. Current DeFi
+    innovations include: Lending platforms; Prediction markets; Decentralised Exchange
+    (DEXs); Staking and pooling platforms. '
+  broader: service
+customer:
+  id: customer
+  prefLabel: Customer
+  type: concept
+  description: The end user of a service. Customer would be paying for the services
+    (buying good, using a service, owning an asset...).
+  broader: actor
+LTC:
+  id: LTC
+  prefLabel: Litecoin
+  type: concept
+  description: "Litecoin (LTC or \u0141) is a peer-to-peer cryptocurrency and open-source\
+    \ software project released under the MIT/X11 license. Litecoin was an early bitcoin\
+    \ spinoff or altcoin, starting in October 2011. In technical details, Litecoin\
+    \ is nearly identical to Bitcoin."
+  broader: cryptocurrency
+cyberterrorist:
+  id: cyberterrorist
+  prefLabel: Cyberterrorist
+  type: concept
+  description: Cyberterrorism is the use of the Internet to conduct violent acts that
+    result in, or threaten, loss of life or significant bodily harm, in order to achieve
+    political or ideological gains through threat or intimidation.
+  broader: actor
+USDT:
+  id: USDT
+  prefLabel: Tether
+  type: concept
+  description: Tether is a controversial cryptocurrency with tokens issued by Tether
+    Limited. It formerly falsely claimed that each token was backed by one United
+    States dollar, but on 14 March 2019 changed the backing to include loans to affiliate
+    companies.
+  broader: cryptocurrency
+bank:
+  id: bank
+  prefLabel: Bank
+  type: concept
+  description: A bank is a financial institution that accepts deposits from the public
+    and creates a demand deposit while simultaneously making loans.
+  broader: actor
+technology:
+  id: technology
+  prefLabel: Technology
+  type: concept
+  description: A capability given by the practical application of knowledge
+  broader: entity2
+XMR:
+  id: XMR
+  prefLabel: Monero
+  type: concept
+  description: 'An open-source cryptocurrency created in April 2014 that focuses on
+    fungibility, privacy and decentralization. Monero (XMR) uses an obfuscated public
+    ledger, meaning anybody can broadcast or send transactions, but no outside observer
+    can tell the source, amount or destination. '
+  broader: cryptocurrency
+BNB:
+  id: BNB
+  prefLabel: Binance Coin
+  type: concept
+  description: 'BNB powers the Binance Ecosystem. As the native coin of Binance Chain,
+    BNB has multiple use cases: fueling transactions on the Chain, paying for transaction
+    fees on Binance Exchange, making in-store payments, and many more.'
+  broader: cryptocurrency
+actor:
+  id: actor
+  prefLabel: Actor
+  type: concept
+  description: An actor is anything playing an active role in Darknets or Cryptoasset
+    ecosystems. This subsumes individuals and organizations as well as automated services
+    fulfilling a certain function in such environments.
+  broader: entity2
+i2p_invisible_internet_protocol_network:
+  id: i2p_invisible_internet_protocol_network
+  prefLabel: Invisible Internet protocol network
+  type: concept
+  description: A type of anonymity network similar to Tor, based on the Invisible
+    Internet Project protocol.
+  broader: dark_web
+dark_market:
+  id: dark_market
+  prefLabel: Darknet market
+  type: concept
+  description: A darknet market is a commercial website on the web that operates via
+    darknets such as Tor or I2P. They function primarily as black markets, selling
+    or brokering transactions involving drugs, cyber-arms, weapons, counterfeit currency,
+    stolen credit card details, forged documents, unlicensed pharmaceuticals, steroids,
+    and other illicit goods as well as the sale of legal products.
+  broader: service
+pgp_pretty_good_privacy:
+  id: pgp_pretty_good_privacy
+  prefLabel: Pretty Good Privacy
+  type: concept
+  description: An abbreviation for Pretty Good Privacy, an encryption program popular
+    for encrypting emails and files. Through the use of public and private keys, it
+    allows users who have never met to send encrypted messages etc. to each other
+    without exchanging private encryption keys.
+  broader: technology
+takedown_notice:
+  id: takedown_notice
+  prefLabel: Takedown notice
+  type: concept
+  description: 'Notice and take down is a process operated by online hosts in response
+    to court orders or allegations that content is illegal. Content is removed by
+    the host following notice. '
+  broader: process
+victim:
+  id: victim
+  prefLabel: Victim
+  type: concept
+  description: Someone or something that has been hurt, damaged, or killed or has
+    suffered, either because of the actions of someone or something else, or because
+    of illness or chance.
+  broader: actor
+  seeAlso: https://dictionary.cambridge.org/dictionary/english/victim
+DOT:
+  id: DOT
+  prefLabel: Polkadot
+  type: concept
+  description: Polkadot is a heterogeneous multi-chain interchange and translation
+    architecture which enables customised side-chains to connect with public blockchains.
+  broader: cryptocurrency
+bank_credentials:
+  id: bank_credentials
+  prefLabel: Bank credentials
+  type: concept
+  description: Login credentials for e-services that are provided by financial institutions
+    with a bank license.
+  broader: asset
+wallet:
+  id: wallet
+  prefLabel: Wallet
+  type: concept
+  description: A wallet, is a piece of software that keeps track of the secret keys,
+    for instance used to digitally sign cryptocurrency transactions for distributed
+    ledgers.
+  broader: infrastructure
+  seeAlso: https://www.computerworld.com/article/3389678/whats-a-crypto-wallet-and-does-it-manage-digital-currency.html
+money_mule:
+  id: money_mule
+  prefLabel: Money mule
+  type: concept
+  description: 'A money mule, sometimes called a "smurfer," is a person who transfers
+    money acquired illegally in person, through a courier service, or electronically,
+    on behalf of others. Typically, the mule is paid for services with a small part
+    of the money transferred. '
+  broader: actor
+irc:
+  id: irc
+  prefLabel: Internet Relay Chat
+  type: concept
+  description: 'A text-based chat service enabling users connected to a server to
+    communicate with each other in real-time. '
+  broader: service
+software_wallet:
+  id: software_wallet
+  prefLabel: Software wallet
+  type: concept
+  description: A [software] cryptocurrency wallet is a (...) program or a service
+    which stores the private keys for cryptocurrency transactions. It will normally
+    also contain the associated public keys.
+  broader: wallet
+ADA:
+  id: ADA
+  prefLabel: Cardano
+  type: concept
+  description: Cardano is a public blockchain platform. It is open source and decentralized,
+    with consensus achieved using proof of stake. It can facilitate peer-to-peer transactions
+    with its internal cryptocurrency Ada.
+  broader: cryptocurrency
+DOGE:
+  id: DOGE
+  prefLabel: Dogecoin
+  type: concept
+  description: "Dogecoin (code: DOGE, symbol: \xD0) is a cryptocurrency created by\
+    \ software engineers Billy Markus and Jackson Palmer, who decided to create a\
+    \ payment system that is instant, fun, and free from traditional banking fees."
+  broader: cryptocurrency
+exchange:
+  id: exchange
+  prefLabel: Exchange
+  type: concept
+  description: "Trading platform (commonly referred to as an \u201CExchange\u201D\
+    ) is the term within this paper used to describe any venue which facilitates the\
+    \ exchange of tokens for any form of money or asset. Trading platforms provide\
+    \ services to buy and sell tokens and/or for exchange of national (fiat) currencies\
+    \ backed by central banks."
+  broader: service
+blockchain:
+  id: blockchain
+  prefLabel: Blockchain
+  type: concept
+  description: Blockchain is a distributed technology built under peer-to-peer network
+    principles and cryptographic primitives, such as asymmetric encryption and digital
+    signature. It allows trust-less users to exchange information and record transactions
+    without external interference and coordination.
+  broader: technology
+darknet_email_service:
+  id: darknet_email_service
+  prefLabel: Darknet Email Service
+  type: concept
+  description: Messaging services hosted or accessible via privacy enhanced networks.
+  broader: service
+credentials:
+  id: credentials
+  prefLabel: Credentials
+  type: concept
+  description: A credential is a piece of any document that details a qualification,
+    competence, or authority issued to an individual by a third party with a relevant
+    or de facto authority or assumed competence to do so.
+  broader: asset
+rug-pull:
+  id: rug-pull
+  prefLabel: Rug pull
+  type: concept
+  description: "A rug pull is a malicious maneuver in the cryptocurrency industry\
+    \ where crypto developers abandon a project and run away with investors\u2019\
+    \ funds"
+  broader: process
+  seeAlso: https://coinmarketcap.com/alexandria/glossary/rug-pull
+moderator:
+  id: moderator
+  prefLabel: Moderator
+  type: concept
+  description: A person who manages the discussion contributions in an online forum.
+  broader: actor
+tor_network:
+  id: tor_network
+  prefLabel: TOR Network
+  type: concept
+  description: "A network of routers that adds encryption to conceal a web user\u2019\
+    s location and usage so that these are resistant to surveillance and hence are\
+    \ truly anonymous. The domain names of these hidden sites all end in \u2018.onion\u2019\
+    \ and they are only accessible by using a Tor browser. Tor stands for \u2018The\
+    \ Onion Router\u2019. "
+  broader: dark_web
+zeronet:
+  id: zeronet
+  prefLabel: ZeroNet
+  type: concept
+  description: "One of the newest Darknets, becoming increasingly popular. It is a\
+    \ combination of trackerless Bittorrent and a Blockchain for persistent site and\
+    \ user identity. ZeroNet optionally uses the Tor network as a virtual private\
+    \ network. As a full mesh network, all clients are also servers. By browsing to\
+    \ a \u201Czite\u201D as they are known in ZeroNet lingo, the machine used automatically\
+    \ becomes one of the servers for this zite also. "
+  broader: dark_web
+dead_drop:
+  id: dead_drop
+  prefLabel: Dead drop
+  type: concept
+  description: "The dead drop is a delivery model used by some vendors to distribute\
+    \ their products. A vendor uses a \u2018dropman\u2019 to hide consignments of\
+    \ pre-packaged drug deals in a number of suitably discreet offline locations.\
+    \ When a buyer makes a purchase from the vendor the geo-coordinates are provided\
+    \ to them for them to collect their order."
+  broader: service
+coinjoin:
+  id: coinjoin
+  prefLabel: Coinjoin
+  type: concept
+  description: Coinjoin is a method of mixing cryptocurrency tokens or coins, where
+    two or more user transactions are combined into a single transaction on the blockchain,
+    with multiple inputs and outputs. The concept behind that methodology is to obfuscate
+    the link between an input and an output that would otherwise be apparent in a
+    standard, single-user transaction. The coinjoin methodology is open-source and
+    integrated into some software wallets, and is also available for use via a hosted
+    online service.
+  broader: technology
+paste_site_service:
+  id: paste_site_service
+  prefLabel: Paste site/service
+  type: concept
+  description: A pastebin or text storage site is a type of online content hosting
+    service where users can store plain text, e.g. to source code snippets for code
+    review via Internet Relay Chat (IRC).
+  broader: service
+deep_web:
+  id: deep_web
+  prefLabel: Deep Web
+  type: concept
+  description: The deep web, invisible web, or hidden web are parts of the World Wide
+    Web whose contents are not indexed by standard web search-engines.
+  broader: infrastructure
+cryptocurrencies_user:
+  id: cryptocurrencies_user
+  prefLabel: Cryptocurrencies User
+  type: concept
+  description: (User of) Decentralized virtual currency that employs cryptography
+    to accomplish tamper-resistance.
+  broader: actor
+flash-loan-attack:
+  id: flash-loan-attack
+  prefLabel: Flash loan attack
+  type: concept
+  description: An attack to a DeFi protocol that exploits vulnerabilities in the flash
+    loan system
+  broader: process
+process:
+  id: process
+  prefLabel: Process
+  type: concept
+  description: A series of actions or operations conducing to an end
+  broader: entity2
+privacy_coin:
+  id: privacy_coin
+  prefLabel: Privacy coin
+  type: concept
+  description: "Privacy coins are a class of cryptocurrencies that power private and\
+    \ anonymous blockchain transactions by obscuring their origin and destination.\
+    \ Some of the techniques used include hiding a user\u2019s real wallet balance\
+    \ and address, and mixing multiple transactions with each other to elude chain\
+    \ analysis."
+  broader: asset
+infrastructure:
+  id: infrastructure
+  prefLabel: Infrastructure
+  type: concept
+  description: The underlying foundation or basic framework (as of a system or organization)
+  broader: entity2
+peer_to_peer_exchange:
+  id: peer_to_peer_exchange
+  prefLabel: Peer-to-peer exchange
+  type: concept
+  description: The exchange or sharing of information, data, or assets between parties
+    without the involvement of a central authority. Peer-to-peer, or P2P, takes a
+    decentralized approach to interactions between individuals and groups. This approach
+    has been used in computers and networking (peer-to-peer file sharing), as well
+    as with virtual assets trading.
+  broader: technology
+proxy:
+  id: proxy
+  prefLabel: Proxy
+  type: concept
+  description: "A virtual service that changes users\u2019 IP addresses when using\
+    \ the Internet. "
+  broader: infrastructure
