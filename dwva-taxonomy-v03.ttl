@@ -1,0 +1,847 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#>
+  a owl:Ontology, skos:ConceptScheme ;
+  owl:ontologyIri <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> ;
+  dc:title "A SKOS based ontology describing the concept scheme Entity Taxonomy." ;
+  owl:versionInfo "0.3", "Reviewed" ;
+  skos:prefLabel "Entity Taxonomy" ;
+  dc:identifier "entities" ;
+  dc:description "This taxonomy defines entities that represent real-world actors and services that are part of a larger darkweb and virtual asset ecosystems." ;
+  dc:created "2022-01-21"^^xsd:date ;
+  dc:creator "INTERPOL Darkweb and Virtual Assets Working Group", "Netherlands Organisation for Applied Scientific Research" .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#hosted-wallet>
+  a skos:Concept ;
+  dc:identifier "hosted-wallet" ;
+  skos:prefLabel "Hosted wallet" ;
+  skos:definition "A digital account hosted by third party financial institution, known as Virtual Asset Service Provider(VASP), which allows the account-holder (the user) to store, send, and receive cryptocurrency." ;
+  rdfs:seeAlso <https://home.treasury.gov/system/files/136/2020-12-18-FAQs.pdf> ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#wallet> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#actor>
+  a skos:Concept ;
+  dc:identifier "actor" ;
+  skos:prefLabel "Actor" ;
+  skos:definition "An actor is anything playing an active role in Darknets or Cryptoasset ecosystems. This subsumes individuals and organizations as well as automated services fulfilling a certain function in such environments." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#entity2> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#cryptocurrencies_user>
+  a skos:Concept ;
+  dc:identifier "cryptocurrencies_user" ;
+  skos:prefLabel "Cryptocurrencies User" ;
+  skos:definition "(User of) Decentralized virtual currency that employs cryptography to accomplish tamper-resistance." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#actor> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#authorities>
+  a skos:Concept ;
+  dc:identifier "authorities" ;
+  skos:prefLabel "Authorities" ;
+  skos:definition "A group of actors in the field of Law Enforcement and/or state actors" ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#actor> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#bank>
+  a skos:Concept ;
+  dc:identifier "bank" ;
+  skos:prefLabel "Bank" ;
+  skos:definition "A bank is a financial institution that accepts deposits from the public and creates a demand deposit while simultaneously making loans." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#actor> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#customer>
+  a skos:Concept ;
+  dc:identifier "customer" ;
+  skos:prefLabel "Customer" ;
+  skos:definition "The end user of a service. Customer would be paying for the services (buying good, using a service, owning an asset...)." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#actor> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#cyberterrorist>
+  a skos:Concept ;
+  dc:identifier "cyberterrorist" ;
+  skos:prefLabel "Cyberterrorist" ;
+  skos:definition "Cyberterrorism is the use of the Internet to conduct violent acts that result in, or threaten, loss of life or significant bodily harm, in order to achieve political or ideological gains through threat or intimidation." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#actor> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#flash-loan-attack>
+  a skos:Concept ;
+  dc:identifier "flash-loan-attack" ;
+  skos:prefLabel "Flash loan attack" ;
+  skos:definition "An attack to a DeFi protocol that exploits vulnerabilities in the flash loan system" ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#process> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#money_mule>
+  a skos:Concept ;
+  dc:identifier "money_mule" ;
+  skos:prefLabel "Money mule" ;
+  skos:definition "A money mule, sometimes called a \"smurfer,\" is a person who transfers money acquired illegally in person, through a courier service, or electronically, on behalf of others. Typically, the mule is paid for services with a small part of the money transferred. " ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#actor> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#shop_owner>
+  a skos:Concept ;
+  dc:identifier "shop_owner" ;
+  skos:prefLabel "Shop owner" ;
+  skos:definition "A shop owner is an actor within the group of Criminal Actors; operating a DW shop." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#actor> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#moderator>
+  a skos:Concept ;
+  dc:identifier "moderator" ;
+  skos:prefLabel "Moderator" ;
+  skos:definition "A person who manages the discussion contributions in an online forum." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#actor> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#virtual_asset_service_provider>
+  a skos:Concept ;
+  dc:identifier "virtual_asset_service_provider" ;
+  skos:prefLabel "Virtual Asset Service Provider" ;
+  skos:definition "Virtual asset service provider means any natural or legal person who (...) as a business conducts one or more of the following activities or operations for or on behalf of another natural or legal person: i) exchange between virtual assets and fiat currencies; ii) exchange between one or more forms of virtual assets; iii) transfer of virtual assets; iv) safekeeping and/or administration of virtual assets or instruments enabling control over virtual assets; and v) participation in and provision of financial services related to an issuer’s offer and/or sale of a virtual asset." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#actor> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#service>
+  a skos:Concept ;
+  dc:identifier "service" ;
+  skos:prefLabel "Service" ;
+  skos:definition "A service refers to some software functionality or a set of software functionalities that can be used by different actors for difffent purposes." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#entity2> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#defi>
+  a skos:Concept ;
+  dc:identifier "defi" ;
+  skos:prefLabel "Decentralized Finances" ;
+  skos:altLabel "DeFI" ;
+  skos:definition "Smart Contracts on blockchains, DApps, mainly via the Ethereum technology and network. They are used to provide traditional financial services. The technology provides strong immunity against attackers and some level of anonymity and privacy. Transactions are confirmed relatively fast, but mostly lack KYC and AML compliance controls and offer limited to no user support and customer care. Current DeFi innovations include: Lending platforms; Prediction markets; Decentralised Exchange (DEXs); Staking and pooling platforms. " ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#service> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#dex>
+  a skos:Concept ;
+  dc:identifier "dex" ;
+  skos:prefLabel "Decentralized Exchange" ;
+  skos:altLabel "DEX" ;
+  skos:definition "Same as exchange but in a completely distributed environment. There is no central hosting server and all nodes are servers." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#service> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#coin_swapping>
+  a skos:Concept ;
+  dc:identifier "coin_swapping" ;
+  skos:prefLabel "Coin swapping" ;
+  skos:definition "CoinSwap is a protocol to make a transaction via a third party to obfuscate the money flow. For instance, when Alice would like to pay Bob, Carol offers to receive Alice's coin and pay Bob with an unconnected coin. While none of these parties trusts each other, this protocol does not allow Carol to rob Alice's coin." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#service> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#coinjoin>
+  a skos:Concept ;
+  dc:identifier "coinjoin" ;
+  skos:prefLabel "Coinjoin" ;
+  skos:definition "Coinjoin is a method of mixing cryptocurrency tokens or coins, where two or more user transactions are combined into a single transaction on the blockchain, with multiple inputs and outputs. The concept behind that methodology is to obfuscate the link between an input and an output that would otherwise be apparent in a standard, single-user transaction. The coinjoin methodology is open-source and integrated into some software wallets, and is also available for use via a hosted online service." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#technology> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#escrow>
+  a skos:Concept ;
+  dc:identifier "escrow" ;
+  skos:prefLabel "Escrow" ;
+  skos:definition "An escrow is a contractual arrangement in which a third party (the stakeholder or escrow agent) receives and disburses money or property for the primary transacting parties, with the disbursement dependent on conditions agreed to by the transacting parties." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#service> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#bulletproof_hosting>
+  a skos:Concept ;
+  dc:identifier "bulletproof_hosting" ;
+  skos:prefLabel "Bulletproof Hosting" ;
+  skos:definition "A (hosting) service that guarantees the availability of hosted resources even when they are found to be malicious or illegal. " ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#service> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#ico>
+  a skos:Concept ;
+  dc:identifier "ico" ;
+  skos:prefLabel "Initial Coin Offering / Initial Crypto-Tokens Offering" ;
+  skos:altLabel "ICO" ;
+  skos:definition "Initial Coin Offerings (ICO) are public offers of  new cryptocurrencies in exchange of existing ones, aimed to  finance projects in the blockchain development arena. The typical pattern is for a startup to produce a white paper that describes their business model and technical approach. The white paper includes details about the functions that the tokens issued during the ICO will perform and the process of token creation." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#service> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#irc>
+  a skos:Concept ;
+  dc:identifier "irc" ;
+  skos:prefLabel "Internet Relay Chat" ;
+  skos:altLabel "IRC" ;
+  skos:definition "A text-based chat service enabling users connected to a server to communicate with each other in real-time. " ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#service> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#paste_site_service>
+  a skos:Concept ;
+  dc:identifier "paste_site_service" ;
+  skos:prefLabel "Paste site/service" ;
+  skos:definition "A pastebin or text storage site is a type of online content hosting service where users can store plain text, e.g. to source code snippets for code review via Internet Relay Chat (IRC)." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#service> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#tumbler>
+  a skos:Concept ;
+  dc:identifier "tumbler" ;
+  skos:prefLabel "Tumbler" ;
+  skos:definition "A method of scrambling or anonymizing the source of one’s cryptocurrencies. " ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#service> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#darknet_email_service>
+  a skos:Concept ;
+  dc:identifier "darknet_email_service" ;
+  skos:prefLabel "Darknet Email Service" ;
+  skos:definition "Messaging services hosted or accessible via privacy enhanced networks." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#service> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#darknet_forum>
+  a skos:Concept ;
+  dc:identifier "darknet_forum" ;
+  skos:prefLabel "Darknet Forum" ;
+  skos:definition "Forum services hosted in the Dark Web." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#service> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#darknet_wiki>
+  a skos:Concept ;
+  dc:identifier "darknet_wiki" ;
+  skos:prefLabel "Darknet Wiki" ;
+  skos:definition "Wiki services, including directory services for other hidden services, hosted in the Dark Web." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#service> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#crypto_atm>
+  a skos:Concept ;
+  dc:identifier "crypto_atm" ;
+  skos:prefLabel "Crypto ATM" ;
+  skos:definition "A Bitcoin ATM (Automated Teller Machine) is a kiosk that allows a person to purchase Bitcoin and other cryptocurrencies by using cash or debit card. Some types of ATM also allow users to sell their cryptocurrency, dispensing cash in payment. Depending on the provider, the ATM can require KYC verification." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#service> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#dead_drop>
+  a skos:Concept ;
+  dc:identifier "dead_drop" ;
+  skos:prefLabel "Dead drop" ;
+  skos:definition "The dead drop is a delivery model used by some vendors to distribute their products. A vendor uses a ‘dropman’ to hide consignments of pre-packaged drug deals in a number of suitably discreet offline locations. When a buyer makes a purchase from the vendor the geo-coordinates are provided to them for them to collect their order." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#service> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#dark_market>
+  a skos:Concept ;
+  dc:identifier "dark_market" ;
+  skos:prefLabel "Darknet market" ;
+  skos:definition "A darknet market is a commercial website on the web that operates via darknets such as Tor or I2P. They function primarily as black markets, selling or brokering transactions involving drugs, cyber-arms, weapons, counterfeit currency, stolen credit card details, forged documents, unlicensed pharmaceuticals, steroids, and other illicit goods as well as the sale of legal products." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#service> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#yield-farming>
+  a skos:Concept ;
+  dc:identifier "yield-farming" ;
+  skos:prefLabel "Yield farming" ;
+  skos:definition "A process that lets you earn either fixed or variable interest by investing crypto in a DeFi market." ;
+  rdfs:seeAlso <https://decrypt.co/resources/what-is-yield-farming-beginners-guide> ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#process> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#shop>
+  a skos:Concept ;
+  dc:identifier "shop" ;
+  skos:prefLabel "Shop" ;
+  skos:definition "A shop is a service where products from one actor (the shop owner) are traded." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#service> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#exchange>
+  a skos:Concept ;
+  dc:identifier "exchange" ;
+  skos:prefLabel "Exchange" ;
+  skos:definition "Trading platform (commonly referred to as an “Exchange”) is the term within this paper used to describe any venue which facilitates the exchange of tokens for any form of money or asset. Trading platforms provide services to buy and sell tokens and/or for exchange of national (fiat) currencies backed by central banks." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#service> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#asset>
+  a skos:Concept ;
+  dc:identifier "asset" ;
+  skos:prefLabel "Asset" ;
+  skos:definition "An item of value owned" ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#entity2> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#cryptocurrency>
+  a skos:Concept ;
+  dc:identifier "cryptocurrency" ;
+  skos:prefLabel "Cryptocurrency" ;
+  skos:definition "A cryptocurrency, crypto-currency, or crypto is a digital asset designed to work as a medium of exchange wherein individual coin ownership records are stored in a ledger existing in a form of a computerized database using strong cryptography to secure transaction records, to control the creation of additional coins, and to verify the transfer of coin ownership." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#asset> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#vendor>
+  a skos:Concept ;
+  dc:identifier "vendor" ;
+  skos:prefLabel "Vendor" ;
+  skos:definition "Someone who is selling something." ;
+  rdfs:seeAlso <https://dictionary.cambridge.org/dictionary/english/vendor> ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#actor> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#fiat_currencies>
+  a skos:Concept ;
+  dc:identifier "fiat_currencies" ;
+  skos:prefLabel "FIAT currencies" ;
+  skos:definition "Fiat money is a currency (a medium of exchange) established as money, often by government regulation. Fiat money does not have intrinsic value and does not have use value. It has value only because a government maintains its value, or because parties engaging in exchange agree on its value. " ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#asset> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#XMR>
+  a skos:Concept ;
+  dc:identifier "XMR" ;
+  skos:prefLabel "Monero" ;
+  skos:altLabel "XMR" ;
+  skos:definition "An open-source cryptocurrency created in April 2014 that focuses on fungibility, privacy and decentralization. Monero (XMR) uses an obfuscated public ledger, meaning anybody can broadcast or send transactions, but no outside observer can tell the source, amount or destination. " ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#cryptocurrency> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#bank_credentials>
+  a skos:Concept ;
+  dc:identifier "bank_credentials" ;
+  skos:prefLabel "Bank credentials" ;
+  skos:definition "Login credentials for e-services that are provided by financial institutions with a bank license." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#asset> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#counterfeit_product>
+  a skos:Concept ;
+  dc:identifier "counterfeit_product" ;
+  skos:prefLabel "Counterfeit product" ;
+  skos:definition "Counterfeit consumer goods are goods, often of inferior quality, made or sold under another's brand name without the brand owner's authorization." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#asset> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#credentials>
+  a skos:Concept ;
+  dc:identifier "credentials" ;
+  skos:prefLabel "Credentials" ;
+  skos:definition "A credential is a piece of any document that details a qualification, competence, or authority issued to an individual by a third party with a relevant or de facto authority or assumed competence to do so." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#asset> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#crypto_assets>
+  a skos:Concept ;
+  dc:identifier "crypto_assets" ;
+  skos:prefLabel "Crypto-assets" ;
+  skos:definition "A crypto-asset (...) is a digital asset designed to work as a medium of exchange wherein individual coin ownership records are stored in a ledger existing in a form of a computerized database using strong cryptography to secure transaction records, to control the creation of additional coins, and to verify the transfer of coin ownership." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#asset> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#ETH>
+  a skos:Concept ;
+  dc:identifier "ETH" ;
+  skos:prefLabel "Ethereum" ;
+  skos:altLabel "ETH" ;
+  skos:definition "Ethereum is a decentralized, open-source blockchain with smart contract functionality. Ether (ETH) is the native cryptocurrency of the platform. It is the second-largest cryptocurrency by market capitalization, after Bitcoin. Ethereum is the most actively used blockchain. " ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#cryptocurrency> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#privacy_coin>
+  a skos:Concept ;
+  dc:identifier "privacy_coin" ;
+  skos:prefLabel "Privacy coin" ;
+  skos:definition "Privacy coins are a class of cryptocurrencies that power private and anonymous blockchain transactions by obscuring their origin and destination. Some of the techniques used include hiding a user’s real wallet balance and address, and mixing multiple transactions with each other to elude chain analysis." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#asset> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#exit-scam>
+  a skos:Concept ;
+  dc:identifier "exit-scam" ;
+  skos:prefLabel "Exit scam" ;
+  skos:definition "An exit scam can be performed by a dark net martket or single vendor shop and is the process in which the one or more of the market admins prevents users withdrawing funds through the escrow system and then closes the market, exiting with all the bitcoins and other digital currencies they were holding in escrow." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#process> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#administrator>
+  a skos:Concept ;
+  dc:identifier "administrator" ;
+  skos:prefLabel "Administrator" ;
+  skos:definition "An actor whose job it is to supervise the technical operation of a service" ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#actor> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#ZEC>
+  a skos:Concept ;
+  dc:identifier "ZEC" ;
+  skos:prefLabel "Zcash" ;
+  skos:altLabel "ZEC" ;
+  skos:definition "A cryptocurrency with a decentralized Blockchain that provides anonymity for its users and their transactions. It is similar to Bitcoin as an open-source, but their major differences are the increased level of privacy it provides. " ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#cryptocurrency> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#BTC>
+  a skos:Concept ;
+  dc:identifier "BTC" ;
+  skos:prefLabel "Bitcoin" ;
+  skos:altLabel "BTC" ;
+  skos:definition "Bitcoin is a network protocol based on blockchain, introduced by Nakamoto [11] which allows payments and coin transfers to be made among participating entities. No trusted" ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#cryptocurrency> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#regulator>
+  a skos:Concept ;
+  dc:identifier "regulator" ;
+  skos:prefLabel "Regulator" ;
+  skos:definition "Authority that defines (national) regulations" ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#authorities> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#BNB>
+  a skos:Concept ;
+  dc:identifier "BNB" ;
+  skos:prefLabel "Binance Coin" ;
+  skos:altLabel "BNB" ;
+  skos:definition "BNB powers the Binance Ecosystem. As the native coin of Binance Chain, BNB has multiple use cases: fueling transactions on the Chain, paying for transaction fees on Binance Exchange, making in-store payments, and many more." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#cryptocurrency> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#DOGE>
+  a skos:Concept ;
+  dc:identifier "DOGE" ;
+  skos:prefLabel "Dogecoin" ;
+  skos:altLabel "DOGE" ;
+  skos:definition "Dogecoin (code: DOGE, symbol: Ð) is a cryptocurrency created by software engineers Billy Markus and Jackson Palmer, who decided to create a payment system that is instant, fun, and free from traditional banking fees." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#cryptocurrency> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#XRP>
+  a skos:Concept ;
+  dc:identifier "XRP" ;
+  skos:prefLabel "Ripple" ;
+  skos:altLabel "XRP" ;
+  skos:definition "Ripple is a real-time gross settlement system, currency exchange and remittance network created by Ripple Labs Inc., a US-based technology company. (...)  The ledger employs the native cryptocurrency known as XRP." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#cryptocurrency> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#USDT>
+  a skos:Concept ;
+  dc:identifier "USDT" ;
+  skos:prefLabel "Tether" ;
+  skos:altLabel "USDT" ;
+  skos:definition "Tether is a controversial cryptocurrency with tokens issued by Tether Limited. It formerly falsely claimed that each token was backed by one United States dollar, but on 14 March 2019 changed the backing to include loans to affiliate companies." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#cryptocurrency> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#ADA>
+  a skos:Concept ;
+  dc:identifier "ADA" ;
+  skos:prefLabel "Cardano" ;
+  skos:altLabel "ADA" ;
+  skos:definition "Cardano is a public blockchain platform. It is open source and decentralized, with consensus achieved using proof of stake. It can facilitate peer-to-peer transactions with its internal cryptocurrency Ada." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#cryptocurrency> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#DOT>
+  a skos:Concept ;
+  dc:identifier "DOT" ;
+  skos:prefLabel "Polkadot" ;
+  skos:altLabel "DOT" ;
+  skos:definition "Polkadot is a heterogeneous multi-chain interchange and translation architecture which enables customised side-chains to connect with public blockchains." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#cryptocurrency> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#BCH>
+  a skos:Concept ;
+  dc:identifier "BCH" ;
+  skos:prefLabel "Bitcoin cash" ;
+  skos:altLabel "BCH" ;
+  skos:definition "Bitcoin Cash is a cryptocurrency that is a fork of Bitcoin. Bitcoin Cash is a spin-off or altcoin that was created in 2017." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#cryptocurrency> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#LTC>
+  a skos:Concept ;
+  dc:identifier "LTC" ;
+  skos:prefLabel "Litecoin" ;
+  skos:altLabel "LTC" ;
+  skos:definition "Litecoin (LTC or Ł) is a peer-to-peer cryptocurrency and open-source software project released under the MIT/X11 license. Litecoin was an early bitcoin spinoff or altcoin, starting in October 2011. In technical details, Litecoin is nearly identical to Bitcoin." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#cryptocurrency> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#wallet>
+  a skos:Concept ;
+  dc:identifier "wallet" ;
+  skos:prefLabel "Wallet" ;
+  skos:definition "A wallet, is a piece of software that keeps track of the secret keys, for instance used to digitally sign cryptocurrency transactions for distributed ledgers." ;
+  rdfs:seeAlso <https://www.computerworld.com/article/3389678/whats-a-crypto-wallet-and-does-it-manage-digital-currency.html> ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#infrastructure> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#virtual_asset_>
+  a skos:Concept ;
+  dc:identifier "virtual_asset_" ;
+  skos:prefLabel "Virtual Asset " ;
+  skos:definition "A virtual asset is a digital representation of value that can be digitally traded, or transferred, and can be used for payment or investment purposes. Virtual assets do not include digital representations of fiat currencies, securities and other financial assets that are already covered elsewhere in the FATF Recommendations." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#asset> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#infrastructure>
+  a skos:Concept ;
+  dc:identifier "infrastructure" ;
+  skos:prefLabel "Infrastructure" ;
+  skos:definition "The underlying foundation or basic framework (as of a system or organization)" ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#entity2> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#dapp_–_decentralized_apps>
+  a skos:Concept ;
+  dc:identifier "dapp_–_decentralized_apps" ;
+  skos:prefLabel "Decentralized Apps" ;
+  skos:altLabel "DApp" ;
+  skos:definition "An application that does not rely on a central server but on several decentralized nodes. Each user can choose to be an active node serving the app. " ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#infrastructure> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#dark_web>
+  a skos:Concept ;
+  dc:identifier "dark_web" ;
+  skos:prefLabel "Dark Web" ;
+  skos:definition "A Darknet is to the Dark Web what the World Wide Web is to the internet. There are many Darknets forming the Dark Web." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#infrastructure> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#i2p_invisible_internet_protocol_network>
+  a skos:Concept ;
+  dc:identifier "i2p_invisible_internet_protocol_network" ;
+  skos:prefLabel "Invisible Internet protocol network" ;
+  skos:definition "A type of anonymity network similar to Tor, based on the Invisible Internet Project protocol." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#dark_web> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#proxy>
+  a skos:Concept ;
+  dc:identifier "proxy" ;
+  skos:prefLabel "Proxy" ;
+  skos:definition "A virtual service that changes users’ IP addresses when using the Internet. " ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#infrastructure> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#relay_node>
+  a skos:Concept ;
+  dc:identifier "relay_node" ;
+  skos:prefLabel "Relay (node)" ;
+  skos:definition "A relay is a node in the Tor network. When a request to access a particular hidden service is made, the browser calculates the optimal route through a series of relays, exchanging cryptographic keys between nodes, to display the content without disclosing the IP address of the request originator.  Each relay decrypts a layer of encryption to reveal the next relay in the circuit to pass the remaining encrypted data on to it. The final relay decrypts the innermost layer of encryption and sends the original data to its destination without revealing or knowing the source IP address. " ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#infrastructure> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#tor_network>
+  a skos:Concept ;
+  dc:identifier "tor_network" ;
+  skos:prefLabel "TOR Network" ;
+  skos:definition "A network of routers that adds encryption to conceal a web user’s location and usage so that these are resistant to surveillance and hence are truly anonymous. The domain names of these hidden sites all end in ‘.onion’ and they are only accessible by using a Tor browser. Tor stands for ‘The Onion Router’. " ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#dark_web> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#deep_web>
+  a skos:Concept ;
+  dc:identifier "deep_web" ;
+  skos:prefLabel "Deep Web" ;
+  skos:definition "The deep web, invisible web, or hidden web are parts of the World Wide Web whose contents are not indexed by standard web search-engines." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#infrastructure> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#hardware_wallet>
+  a skos:Concept ;
+  dc:identifier "hardware_wallet" ;
+  skos:prefLabel "Hardware Wallet" ;
+  skos:definition "A [hardware] cryptocurrency wallet is a device, physical medium, (...) which stores the private keys for cryptocurrency transactions. It will normally also contain the associated public keys." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#wallet> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#entity2>
+  a skos:Concept ;
+  dc:identifier "entity2" ;
+  skos:prefLabel "DWVA Entity" ;
+  skos:definition "An entity is anything that can be found and that could be reported in the context of Dark Web & Virtual Assets investigations." ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#software_wallet>
+  a skos:Concept ;
+  dc:identifier "software_wallet" ;
+  skos:prefLabel "Software wallet" ;
+  skos:definition "A [software] cryptocurrency wallet is a (...) program or a service which stores the private keys for cryptocurrency transactions. It will normally also contain the associated public keys." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#wallet> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#flash-loan>
+  a skos:Concept ;
+  dc:identifier "flash-loan" ;
+  skos:prefLabel "Flash Loan" ;
+  skos:definition "A cryptocurrency loan executed trough a smart contract, with no collateral, that must be paid back in the same block. The purpose of a flash loan is to gain money through arbitrage (on different exchanges or different assets) without providing any collateral." ;
+  rdfs:seeAlso <https://www.coindesk.com/what-is-a-flash-loan> ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#technology> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#zeronet>
+  a skos:Concept ;
+  dc:identifier "zeronet" ;
+  skos:prefLabel "ZeroNet" ;
+  skos:definition "One of the newest Darknets, becoming increasingly popular. It is a combination of trackerless Bittorrent and a Blockchain for persistent site and user identity. ZeroNet optionally uses the Tor network as a virtual private network. As a full mesh network, all clients are also servers. By browsing to a “zite” as they are known in ZeroNet lingo, the machine used automatically becomes one of the servers for this zite also. " ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#dark_web> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#process>
+  a skos:Concept ;
+  dc:identifier "process" ;
+  skos:prefLabel "Process" ;
+  skos:definition "A series of actions or operations conducing to an end" ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#entity2> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#fe_finalize_early>
+  a skos:Concept ;
+  dc:identifier "fe_finalize_early" ;
+  skos:prefLabel "Finalize Early" ;
+  skos:altLabel "FE" ;
+  skos:definition "Buyers may \"finalize early\" (FE), releasing funds from escrow to the vendor prior to receiving their goods in order to expedite a transaction. This can be done when there is a trust relationship between vendor and buyer, however it does leave the buyer vulnerable to fraud if they choose to do so." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#process> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#unhosted-wallet>
+  a skos:Concept ;
+  dc:identifier "unhosted-wallet" ;
+  skos:prefLabel "Unhosted wallet" ;
+  skos:definition "A wallet that is not hosted by a third-party financial system. It can be very difficult or impossible to determine who is accessing or in control of the use of cryptocurrencies in an unhosted wallet. Unhosted wallets allow for anonymity and concealment of illicit financial activity." ;
+  rdfs:seeAlso <https://home.treasury.gov/system/files/136/2020-12-18-FAQs.pdf> ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#wallet> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#multisig>
+  a skos:Concept ;
+  dc:identifier "multisig" ;
+  skos:prefLabel "Multisig" ;
+  skos:definition "Multisig refers to all the transactions that require two or more signatures. Multisignature transactions and addresses are validated only when at least x of the possible y signatories have signed. x and y are defined at creation." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#process> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#bip_bitcoin_improvement_proposals>
+  a skos:Concept ;
+  dc:identifier "bip_bitcoin_improvement_proposals" ;
+  skos:prefLabel "Bitcoin Improvement Proposals" ;
+  skos:altLabel "BIP" ;
+  skos:definition "Bitcoin improvement proposals, these are the equivalent of RFCs. They define the protocols and structures of Bitcoin. They are developed and maintained at the Bitcoin Github." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#process> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#takedown_notice>
+  a skos:Concept ;
+  dc:identifier "takedown_notice" ;
+  skos:prefLabel "Takedown notice" ;
+  skos:definition "Notice and take down is a process operated by online hosts in response to court orders or allegations that content is illegal. Content is removed by the host following notice. " ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#process> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#technology>
+  a skos:Concept ;
+  dc:identifier "technology" ;
+  skos:prefLabel "Technology" ;
+  skos:definition "A capability given by the practical application of knowledge" ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#entity2> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#dot_onion>
+  a skos:Concept ;
+  dc:identifier "dot_onion" ;
+  skos:prefLabel ".Onion" ;
+  skos:definition "A special-use top level domain name designating an anonymous onion service, which was formerly known as a \"hidden service\". It is referred to as that because of the “layered” approach to relays on the Tor Browser." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#technology> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#hidden_service>
+  a skos:Concept ;
+  dc:identifier "hidden_service" ;
+  skos:prefLabel "Hidden Service" ;
+  skos:definition "A collective name used to describe websites which require a special browser in order to access." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#technology> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#sidechain>
+  a skos:Concept ;
+  dc:identifier "sidechain" ;
+  skos:prefLabel "Sidechain" ;
+  skos:definition "A sidechain is a side blockchain that is linked to another blockchain, referred to as the main chain, via a two-way peg." ;
+  rdfs:seeAlso <https://coinmarketcap.com/alexandria/glossary/side-chain> ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#technology> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#blockchain>
+  a skos:Concept ;
+  dc:identifier "blockchain" ;
+  skos:prefLabel "Blockchain" ;
+  skos:definition "Blockchain is a distributed technology built under peer-to-peer network principles and cryptographic primitives, such as asymmetric encryption and digital signature. It allows trust-less users to exchange information and record transactions without external interference and coordination." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#technology> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#dht_distributed_hash_technology>
+  a skos:Concept ;
+  dc:identifier "dht_distributed_hash_technology" ;
+  skos:prefLabel "Distributed Hash Technology" ;
+  skos:altLabel "DHT" ;
+  skos:definition "A decentralized distributed system that provides sharing contact information, so people downloading the same file can discover each other. Both Tor and I2P use DHT. Due to the distributed nature of the hidden services domain resolution, it is possible to deploy nodes in the DHT to monitor requests coming from a given domain." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#technology> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#drop-ship>
+  a skos:Concept ;
+  dc:identifier "drop-ship" ;
+  skos:prefLabel "Drop Ship" ;
+  skos:definition "A vending tactic involving the vendor passing the buyer’s address on to another vendor to ship to, eliminating any need for the middleman (dropshipper) to handle anything illegal in person." ;
+  rdfs:seeAlso "DNM Bible Glossary" ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#service> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#metadata>
+  a skos:Concept ;
+  dc:identifier "metadata" ;
+  skos:prefLabel "Metadata" ;
+  skos:definition "Refers to data that provides information about a certain item's content. For example, an image may include information that describes how large the picture is or when the image was created, while a text document may contain information about the author of the document, or the IP address of the document's author, and so on. " ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#technology> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#pgp_pretty_good_privacy>
+  a skos:Concept ;
+  dc:identifier "pgp_pretty_good_privacy" ;
+  skos:prefLabel "Pretty Good Privacy" ;
+  skos:altLabel "PGP" ;
+  skos:definition "An abbreviation for Pretty Good Privacy, an encryption program popular for encrypting emails and files. Through the use of public and private keys, it allows users who have never met to send encrypted messages etc. to each other without exchanging private encryption keys." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#technology> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#utxo_unspent_transaction_output>
+  a skos:Concept ;
+  dc:identifier "utxo_unspent_transaction_output" ;
+  skos:prefLabel "Unspent Transaction Output" ;
+  skos:altLabel "UTXO" ;
+  skos:definition "An unspent transaction output of cryptocurrencies. This output is considered as an input to new transaction." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#technology> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#peer_to_peer_exchange>
+  a skos:Concept ;
+  dc:identifier "peer_to_peer_exchange" ;
+  skos:prefLabel "Peer-to-peer exchange" ;
+  skos:definition "The exchange or sharing of information, data, or assets between parties without the involvement of a central authority. Peer-to-peer, or P2P, takes a decentralized approach to interactions between individuals and groups. This approach has been used in computers and networking (peer-to-peer file sharing), as well as with virtual assets trading." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#technology> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#pos_proof_of_stake>
+  a skos:Concept ;
+  dc:identifier "pos_proof_of_stake" ;
+  skos:prefLabel "Proof of Stake" ;
+  skos:altLabel "PoS" ;
+  skos:definition "In a Proof of Stake (PoS) network, users need to prove ownership of enough stakes to become validators. Ethereum (ETH) is moving from PoW to PoS. PoS offers several advantages over PoW: it is energy efficient, reduces hardware requirements and is less prone to centralisation " ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#technology> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#pow_proof_of_work>
+  a skos:Concept ;
+  dc:identifier "pow_proof_of_work" ;
+  skos:prefLabel "Proof of Work" ;
+  skos:altLabel "PoW" ;
+  skos:definition "Bitcoin blockchain is constructed and validated by computation. Miners work to validate the blockchain with their computation power, proving their work for a reward. The Bitcoin Blockchain is based on Proof-of-Work. " ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#technology> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#hierarchically_deterministic_wallets>
+  a skos:Concept ;
+  dc:identifier "hierarchically_deterministic_wallets" ;
+  skos:prefLabel "Hierarchically Deterministic wallets" ;
+  skos:definition "An HD (Hierarchical Deterministic) Wallet is a tree of private/public keypairs starting from a master seed. This technology provides both account management and identity masking. A user only needs to keep the master seeds because she can generate following keypairs from the root key deterministically, and each public key that can be exposed is changed for each transaction. " ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#technology> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#rug-pull>
+  a skos:Concept ;
+  dc:identifier "rug-pull" ;
+  skos:prefLabel "Rug pull" ;
+  skos:definition "A rug pull is a malicious maneuver in the cryptocurrency industry where crypto developers abandon a project and run away with investors’ funds" ;
+  rdfs:seeAlso <https://coinmarketcap.com/alexandria/glossary/rug-pull> ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#process> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#smart_contract>
+  a skos:Concept ;
+  dc:identifier "smart_contract" ;
+  skos:prefLabel "Smart contract" ;
+  skos:definition "A smart contract is a self-executing contract with the terms of the agreement between buyer and seller being directly written into lines of code. The code and the agreements contained therein exist across a distributed, decentralized blockchain network. The code controls the execution, and transactions are trackable and irreversible." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#technology> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#non-fungible-token>
+  a skos:Concept ;
+  dc:identifier "non-fungible-token" ;
+  skos:prefLabel "Non Fungible Token" ;
+  skos:altLabel "NFT" ;
+  skos:definition "A non-fungible token (NFT) is a unit of data stored on a digital ledger, called a blockchain, that certifies a digital asset to be unique and therefore not interchangeable. NFTs can be used to represent items such as photos, videos, audio, and other types of digital files." ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Non-fungible_token> ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#technology> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#layer-2>
+  a skos:Concept ;
+  dc:identifier "layer-2" ;
+  skos:prefLabel "Layer 2" ;
+  skos:definition "Layer 2 is a collective term for solutions designed to help scale decentralised applications by handling transactions off the Ethereum mainnet (layer 1), while taking advantage of the robust decentralized security model of mainnet." ;
+  rdfs:seeAlso <https://ethereum.org/en/developers/docs/scaling/layer-2-rollups> ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#technology> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#I2P>
+  a skos:Concept ;
+  dc:identifier "I2P" ;
+  skos:prefLabel "Invisible Internet Protocol" ;
+  skos:altLabel "I2P" ;
+  skos:definition "An “anonymous overlay network” using the garlic routing protocol that encrypts multiple messages together to make data traffic analysis difficult, while simultaneously increasing network traffic speed. Each encrypted message has its own specific delivery instruction, and each endpoint works as a cryptographic identifier or what we refer to as “keys.” Since I2P is entirely peer-to-peer in structure, there's no hard-coded trusted set of directory stores. Instead, the network directory of I2P is netDb, a distributed database that is replicated across the network." ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#technology> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#service-provider>
+  a skos:Concept ;
+  dc:identifier "service-provider" ;
+  skos:prefLabel "Service Provider" ;
+  skos:definition "An actor that provides a service by making available and managing infrastructure or by executing a process" ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#actor> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#bridge>
+  a skos:Concept ;
+  dc:identifier "bridge" ;
+  skos:prefLabel "Bridge" ;
+  skos:definition "Blockchain bridges enable interoperability between vastly different networks, such as Bitcoin and Ethereum, and between one parent blockchain and its sidechains." ;
+  rdfs:seeAlso <https://blog.makerdao.com/what-are-blockchain-bridges-and-why-are-they-important-for-defi/> ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#technology> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
+<https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#victim>
+  a skos:Concept ;
+  dc:identifier "victim" ;
+  skos:prefLabel "Victim" ;
+  skos:definition "Someone or something that has been hurt, damaged, or killed or has suffered, either because of the actions of someone or something else, or because of illness or chance." ;
+  rdfs:seeAlso <https://dictionary.cambridge.org/dictionary/english/victim> ;
+  skos:broader <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#actor> ;
+  skos:inScheme <https://interpol-innovation-centre.github.io/DW-VA-Taxonomy/taxonomies/entities#> .
+
