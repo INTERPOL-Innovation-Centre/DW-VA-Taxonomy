@@ -11,17 +11,13 @@ Checkout this git repository to your local machine
 	git clone git@github.com:INTERPOL-Innovation-Centre/DW-VA-Taxonomy.git
 	cd DW-VA-Taxonomy
 
-Make sure you have [Jekyll][jekyll] installed
+Use docker to incrementally compile and watch the site
 
-	gem install bundler jekyll
+	docker run --rm --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" --env JEKYLL_ENV=development -p 4000:4000 jekyll/jekyll:4 jekyll serve
 
-Run Jekyll locally
+Access the taxonomy website locally using your browser
 
-	bundle exec jekyll serve --baseurl '' --watch
-
-Access the taxonomy website locallly using your browser
-
-	http://127.0.0.1:4000/
+	http://0.0.0.0:4000/DW-VA-Taxonomy/
 
 ## How to create / modify / delete concept defintions
 
