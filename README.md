@@ -33,10 +33,10 @@ Each taxonomy file defines a so-called [(concept) **scheme**](https://www.w3.org
 	  baseurl: /taxonomies/entities
 	  csvfile: assets/data/entities.csv  
 	  type: conceptScheme
-	  version: 0.1
-	  lastmod: 2020-03-31
+	  version: 0.3
+	  lastmod: 2022-01-21
 	  title: Entity Taxonomy
-	  creator: INTERPOL Darknet and Cryptocurrencies Working Group
+	  creator: INTERPOL Darkweb and Virtual Assets Working Group
 	  description: >
 	   This taxonomy defines entities that represent real-world actors
 	   and service that are part of a larger Darknet- and Cryptoasset Ecosystems.
